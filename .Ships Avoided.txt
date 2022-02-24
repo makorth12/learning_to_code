@@ -1,0 +1,956 @@
+12.png Found at: Point(x=1105, y=80)
+12.png Found at: Point(x=1113, y=80)
+12.png Found at: Point(x=1104, y=80)
+12.png Found at: Point(x=1113, y=78)
+12.png Found at: Point(x=1105, y=80)
+12.png Found at: Point(x=1105, y=80)
+12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1113, y=80)
+z12.png Found at: Point(x=1104, y=80)
+z12.png Found at: Point(x=1113, y=80)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1104, y=80)
+z12.png Found at: Point(x=1104, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1150, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1086, y=78)
+z12.png Found at: Point(x=1113, y=78)
+CrazyJoe.png Found at: Point(x=919, y=54)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1113, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1057, y=80)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1104, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1116, y=78)
+rf.png Found at: Point(x=904, y=56)
+z12.png Found at: Point(x=1057, y=80)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1130, y=80)
+z12.png Found at: Point(x=1130, y=80)
+rf.png Found at: Point(x=913, y=56)
+z12.png Found at: Point(x=1150, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1086, y=78)
+z12.png Found at: Point(x=1086, y=78)
+tezzar.png Found at: Point(x=929, y=53)
+tezzar.png Found at: Point(x=929, y=53)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1104, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1057, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1090, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1113, y=80)
+rf.png Found at: Point(x=913, y=56)
+z12.png Found at: Point(x=1104, y=80)
+z12.png Found at: Point(x=1105, y=80)
+tezzar.png Found at: Point(x=929, y=53)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1086, y=78)
+rf.png Found at: Point(x=913, y=56)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1057, y=80)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1086, y=78)
+z12.png Found at: Point(x=1086, y=78)
+tezzar.png Found at: Point(x=929, y=53)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1130, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1150, y=78)
+CrazyJoe.png Found at: Point(x=930, y=54)
+CrazyJoe.png Found at: Point(x=930, y=54)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1105, y=80)
+rf.png Found at: Point(x=904, y=56)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1057, y=80)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1150, y=78)
+z12.png Found at: Point(x=1150, y=78)
+z12.png Found at: Point(x=1130, y=80)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+tezzar.png Found at: Point(x=929, y=53)
+tezzar.png Found at: Point(x=929, y=53)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1106, y=78)
+z12.png Found at: Point(x=1106, y=78)
+z12.png Found at: Point(x=1104, y=80)
+z12.png Found at: Point(x=1104, y=80)
+z12.png Found at: Point(x=1091, y=78)
+z12.png Found at: Point(x=1091, y=78)
+rf.png Found at: Point(x=913, y=56)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1086, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1057, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1150, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1150, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1086, y=78)
+z12.png Found at: Point(x=1086, y=78)
+rf.png Found at: Point(x=913, y=56)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+rf.png Found at: Point(x=913, y=56)
+z12.png Found at: Point(x=1104, y=80)
+z12.png Found at: Point(x=1104, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1113, y=78)
+tezzar.png Found at: Point(x=929, y=53)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1105, y=80)
+rf.png Found at: Point(x=904, y=56)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+rf.png Found at: Point(x=913, y=56)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1104, y=80)
+rf.png Found at: Point(x=913, y=56)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1104, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1057, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1150, y=78)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1104, y=80)
+z12.png Found at: Point(x=1086, y=78)
+rf.png Found at: Point(x=913, y=56)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1150, y=78)
+z12.png Found at: Point(x=1150, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+tezzar.png Found at: Point(x=929, y=53)
+tezzar.png Found at: Point(x=929, y=53)
+z12.png Found at: Point(x=1130, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1057, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1086, y=78)
+z12.png Found at: Point(x=1086, y=78)
+rf.png Found at: Point(x=913, y=56)
+rf.png Found at: Point(x=913, y=56)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1104, y=78)
+z12.png Found at: Point(x=1104, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1116, y=78)
+tezzar.png Found at: Point(x=929, y=53)
+tezzar.png Found at: Point(x=929, y=53)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1057, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1090, y=78)
+z12.png Found at: Point(x=1090, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1116, y=80)
+z12.png Found at: Point(x=1150, y=78)
+z12.png Found at: Point(x=1150, y=78)
+z12.png Found at: Point(x=1106, y=78)
+z12.png Found at: Point(x=1106, y=78)
+z12.png Found at: Point(x=1086, y=78)
+rf.png Found at: Point(x=913, y=56)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1104, y=80)
+z12.png Found at: Point(x=1104, y=78)
+z12.png Found at: Point(x=1116, y=80)
+z12.png Found at: Point(x=1130, y=80)
+z12.png Found at: Point(x=1116, y=80)
+z12.png Found at: Point(x=1113, y=80)
+z12.png Found at: Point(x=1113, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1090, y=80)
+z12.png Found at: Point(x=1090, y=80)
+z12.png Found at: Point(x=1090, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+rf.png Found at: Point(x=913, y=56)
+z12.png Found at: Point(x=1086, y=78)
+z12.png Found at: Point(x=1086, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1150, y=78)
+z12.png Found at: Point(x=1104, y=78)
+tezzar.png Found at: Point(x=929, y=53)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1057, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1130, y=80)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1104, y=80)
+z12.png Found at: Point(x=1104, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1090, y=78)
+z12.png Found at: Point(x=1116, y=80)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1106, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1150, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1113, y=80)
+rf.png Found at: Point(x=913, y=56)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1086, y=78)
+tezzar.png Found at: Point(x=929, y=53)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1057, y=80)
+z12.png Found at: Point(x=1057, y=80)
+z12.png Found at: Point(x=1130, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1116, y=78)
+CrazyJoe.png Found at: Point(x=930, y=54)
+CrazyJoe.png Found at: Point(x=930, y=54)
+z12.png Found at: Point(x=1113, y=78)
+z12.png Found at: Point(x=1104, y=78)
+z12.png Found at: Point(x=1104, y=78)
+z12.png Found at: Point(x=1090, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1113, y=80)
+rf.png Found at: Point(x=913, y=56)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+tezzar.png Found at: Point(x=929, y=53)
+z12.png Found at: Point(x=1150, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+CrazyJoe.png Found at: Point(x=930, y=54)
+z12.png Found at: Point(x=1057, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1104, y=78)
+z12.png Found at: Point(x=1105, y=80)
+tezzar.png Found at: Point(x=929, y=53)
+tezzar.png Found at: Point(x=929, y=53)
+z12.png Found at: Point(x=1090, y=78)
+z12.png Found at: Point(x=1104, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1116, y=80)
+z12.png Found at: Point(x=1113, y=80)
+z12.png Found at: Point(x=1113, y=80)
+z12.png Found at: Point(x=1113, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1116, y=80)
+z12.png Found at: Point(x=1116, y=80)
+z12.png Found at: Point(x=1090, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1057, y=80)
+z12.png Found at: Point(x=1057, y=80)
+z12.png Found at: Point(x=1150, y=78)
+z12.png Found at: Point(x=1150, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1104, y=78)
+z12.png Found at: Point(x=1104, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1130, y=80)
+z12.png Found at: Point(x=1130, y=80)
+z12.png Found at: Point(x=1057, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1104, y=78)
+z12.png Found at: Point(x=1104, y=78)
+z12.png Found at: Point(x=1116, y=78)
+tezzar.png Found at: Point(x=929, y=53)
+z12.png Found at: Point(x=1090, y=78)
+z12.png Found at: Point(x=1090, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1104, y=78)
+z12.png Found at: Point(x=1104, y=78)
+z12.png Found at: Point(x=1057, y=80)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1116, y=80)
+z12.png Found at: Point(x=1116, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1150, y=78)
+z12.png Found at: Point(x=1150, y=78)
+tezzar.png Found at: Point(x=929, y=53)
+tezzar.png Found at: Point(x=929, y=53)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1090, y=78)
+z12.png Found at: Point(x=1090, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1057, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1104, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1113, y=80)
+rf.png Found at: Point(x=913, y=56)
+z12.png Found at: Point(x=1150, y=78)
+rf.png Found at: Point(x=913, y=56)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1120, y=80)
+z12.png Found at: Point(x=1116, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1105, y=80)
+rf.png Found at: Point(x=913, y=56)
+z12.png Found at: Point(x=1113, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1116, y=78)
+tezzar.png Found at: Point(x=929, y=53)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+CrazyJoe.png Found at: Point(x=930, y=54)
+z12.png Found at: Point(x=1113, y=80)
+CrazyJoe.png Found at: Point(x=930, y=54)
+z12.png Found at: Point(x=1113, y=80)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1116, y=78)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=80)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=78)
+z12.png Found at: Point(x=1105, y=80) at: 18.09.2021 - 01.27.33
+z12.png Found at: Point(x=1105, y=80) at: 18.09.2021 - 01.27.39
+z12.png Found at: Point(x=1105, y=80) at: 18.09.2021 - 01.27.39
+z12.png Found at: Point(x=1113, y=80) at: 18.09.2021 - 01.27.46
+CrazyJoe.png Found at: Point(x=930, y=54) at: 18.09.2021 - 01.27.47
+z12.png Found at: Point(x=1113, y=80) at: 18.09.2021 - 01.27.47
+z12.png Found at: Point(x=1105, y=80) at: 18.09.2021 - 01.27.59
+z12.png Found at: Point(x=1105, y=80) at: 18.09.2021 - 01.28.00
+z12.png Found at: Point(x=1105, y=80) at: 18.09.2021 - 01.52.13
+z12.png Found at: Point(x=1105, y=80) at: 18.09.2021 - 01.52.20
+z12.png Found at: Point(x=1105, y=80) at: 18.09.2021 - 01.52.20
+tezzar.png Found at: Point(x=929, y=53) at: 18.09.2021 - 01.52.27
+z12.png Found at: Point(x=1105, y=78) at: 18.09.2021 - 01.52.27
+tezzar.png Found at: Point(x=929, y=53) at: 18.09.2021 - 01.52.27
+z12.png Found at: Point(x=1105, y=78) at: 18.09.2021 - 01.52.28
+z12.png Found at: Point(x=1116, y=78) at: 18.09.2021 - 01.52.35
+z12.png Found at: Point(x=1116, y=78) at: 18.09.2021 - 01.52.35
+z12.png Found at: Point(x=1105, y=78) at: 18.09.2021 - 01.52.41
+z12.png Found at: Point(x=1105, y=78) at: 18.09.2021 - 01.52.42
+z12.png Found at: Point(x=1105, y=78) at: 18.09.2021 - 01.52.42
+z12.png Found at: Point(x=1105, y=80) at: 18.09.2021 - 01.52.50
+z12.png Found at: Point(x=1105, y=80) at: 18.09.2021 - 01.52.51
+z12.png Found at: Point(x=1105, y=80) at: 18.09.2021 - 01.52.51
+z12.png Found at: Point(x=1105, y=78) at: 18.09.2021 - 01.52.57
+z12.png Found at: Point(x=1105, y=78) at: 18.09.2021 - 01.52.58
+z12.png Found at: Point(x=1105, y=78) at: 18.09.2021 - 01.52.59
+z12.png Found at: Point(x=1105, y=78) at: 18.09.2021 - 01.53.30
+z12.png Found at: Point(x=1116, y=78) at: 18.09.2021 - 13.18.59
+z12.png Found at: Point(x=1105, y=80) at: 18.09.2021 - 13.19.27
+rf.png Found at: Point(x=913, y=56) at: 18.09.2021 - 13.19.33
+z12.png Found at: Point(x=1105, y=80) at: 18.09.2021 - 13.19.41
+z12.png Found at: Point(x=1105, y=80) at: 18.09.2021 - 13.20.49
+tezzar.png Found at: Point(x=929, y=53) at: 18.09.2021 - 13.20.56
+z12.png Found at: Point(x=1105, y=80) at: 18.09.2021 - 13.21.03
+z12.png Found at: Point(x=1113, y=80) at: 18.09.2021 - 13.21.10
+z12.png Found at: Point(x=1105, y=78) at: 18.09.2021 - 13.21.18
+z12.png Found at: Point(x=1116, y=78) at: 18.09.2021 - 13.21.23
+z12.png Found at: Point(x=1116, y=78) at: 18.09.2021 - 13.21.30
+z12.png Found at: Point(x=1113, y=80) at: 18.09.2021 - 13.27.41
+rf.png Found at: Point(x=913, y=56) at: 18.09.2021 - 13.30.59
+z12.png Found at: Point(x=1105, y=80) at: 18.09.2021 - 13.31.06
+z12.png Found at: Point(x=1105, y=80) at: 18.09.2021 - 13.34.28
+z12.png Found at: Point(x=1113, y=80) at: 18.09.2021 - 13.34.34
+z12.png Found at: Point(x=1113, y=80) at: 18.09.2021 - 13.34.41
+z12.png Found at: Point(x=1105, y=80) at: 18.09.2021 - 13.34.48
+z12.png Found at: Point(x=1105, y=78) at: 27.09.2021 - 00.55.20
+z12.png Found at: Point(x=1116, y=81) at: 27.09.2021 - 00.55.26
+z12.png Found at: Point(x=1113, y=83) at: 27.09.2021 - 00.55.31
+z12.png Found at: Point(x=1104, y=78) at: 27.09.2021 - 00.55.37
+z12.png Found at: Point(x=1130, y=80) at: 27.09.2021 - 00.55.43
+z12.png Found at: Point(x=1116, y=78) at: 27.09.2021 - 00.55.49
+z12.png Found at: Point(x=1142, y=78) at: 27.09.2021 - 00.55.56
+z12.png Found at: Point(x=1104, y=80) at: 27.09.2021 - 00.56.03
+z12.png Found at: Point(x=1105, y=80) at: 27.09.2021 - 00.56.09
+z12.png Found at: Point(x=1105, y=78) at: 27.09.2021 - 00.56.14
+z12.png Found at: Point(x=1105, y=80) at: 27.09.2021 - 00.56.21
+z12.png Found at: Point(x=1035, y=78) at: 27.09.2021 - 00.56.27
+z12.png Found at: Point(x=1136, y=78) at: 27.09.2021 - 00.56.33
+z12.png Found at: Point(x=1105, y=80) at: 27.09.2021 - 00.56.39
+z12.png Found at: Point(x=1104, y=78) at: 27.09.2021 - 00.56.45
+z12.png Found at: Point(x=1161, y=80) at: 27.09.2021 - 00.56.51
+z12.png Found at: Point(x=1099, y=78) at: 27.09.2021 - 00.56.58
+z12.png Found at: Point(x=1105, y=80) at: 27.09.2021 - 00.57.04
+z12.png Found at: Point(x=1105, y=78) at: 27.09.2021 - 00.57.09
+z12.png Found at: Point(x=1105, y=78) at: 27.09.2021 - 00.57.16
+z12.png Found at: Point(x=1105, y=80) at: 28.09.2021 - 11.36.29
+z12.png Found at: Point(x=1161, y=82) at: 28.09.2021 - 11.36.35
+z12.png Found at: Point(x=1104, y=78) at: 28.09.2021 - 11.36.41
+z12.png Found at: Point(x=1116, y=80) at: 28.09.2021 - 11.36.46
+z12.png Found at: Point(x=1105, y=80) at: 28.09.2021 - 11.36.53
+z12.png Found at: Point(x=1116, y=78) at: 28.09.2021 - 11.36.59
+z12.png Found at: Point(x=1105, y=80) at: 01.10.2021 - 17.14.57
+z12.png Found at: Point(x=1105, y=80) at: 01.10.2021 - 17.15.07
+z12.png Found at: Point(x=1105, y=80) at: 01.10.2021 - 17.15.15
+rf.png Found at: Point(x=913, y=56) at: 01.10.2021 - 17.15.21
+z12.png Found at: Point(x=1105, y=78) at: 01.10.2021 - 17.15.29
+z12.png Found at: Point(x=1105, y=80) at: 01.10.2021 - 17.15.37
+z12.png Found at: Point(x=1105, y=78) at: 01.10.2021 - 17.15.46
+z12.png Found at: Point(x=1113, y=80) at: 01.10.2021 - 17.16.07
+z12.png Found at: Point(x=1105, y=80) at: 01.10.2021 - 17.16.16
+z12.png Found at: Point(x=1130, y=80) at: 01.10.2021 - 17.16.23
+z12.png Found at: Point(x=1113, y=80) at: 01.10.2021 - 17.16.31
+C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoid\z12.png Found at: Point(x=1116, y=80) at: 03.10.2021 - 20.33.06
+C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoid\z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 20.37.32
+C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoid\z12.png Found at: Point(x=1120, y=78) at: 03.10.2021 - 20.37.54
+C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoid\z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 20.38.15
+C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoid\z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 21.13.31
+C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoid\z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 21.13.39
+C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoid\z12.png Found at: Point(x=1105, y=78) at: 03.10.2021 - 21.13.47
+C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoid\z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 21.13.55
+C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoid\rf.png Found at: Point(x=913, y=56) at: 03.10.2021 - 21.14.01
+C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoid\z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 21.14.09
+C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoid\z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 21.14.16
+C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoid\z12.png Found at: Point(x=1105, y=78) at: 03.10.2021 - 21.14.24
+C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoid\z12.png Found at: Point(x=1105, y=78) at: 03.10.2021 - 21.14.31
+z12.png Found at: Point(x=1105, y=78) at: 03.10.2021 - 21.23.05
+z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 21.23.14
+z12.png Found at: Point(x=1105, y=78) at: 03.10.2021 - 23.16.33
+z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 23.17.15
+z12.png Found at: Point(x=1105, y=78) at: 03.10.2021 - 23.17.22
+z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 23.17.33
+z12.png Found at: Point(x=1130, y=80) at: 03.10.2021 - 23.17.40
+z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 23.17.48
+z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 23.17.56
+z12.png Found at: Point(x=1105, y=78) at: 03.10.2021 - 23.23.37
+z12.png Found at: Point(x=1105, y=78) at: 03.10.2021 - 23.23.45
+z12.png Found at: Point(x=1130, y=80) at: 03.10.2021 - 23.23.52
+z12.png Found at: Point(x=1106, y=78) at: 03.10.2021 - 23.23.59
+z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 23.24.17
+z12.png Found at: Point(x=1155, y=78) at: 03.10.2021 - 23.24.27
+z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 23.24.36
+z12.png Found at: Point(x=1105, y=78) at: 03.10.2021 - 23.24.44
+z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 23.24.50
+z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 23.24.57
+z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 23.25.05
+z12.png Found at: Point(x=1113, y=80) at: 03.10.2021 - 23.25.13
+z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 23.25.20
+z12.png Found at: Point(x=1105, y=78) at: 03.10.2021 - 23.25.28
+rf.png Found at: Point(x=913, y=56) at: 03.10.2021 - 23.25.34
+z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 23.25.41
+z12.png Found at: Point(x=1105, y=78) at: 03.10.2021 - 23.25.46
+tezzar.png Found at: Point(x=929, y=53) at: 03.10.2021 - 23.25.54
+z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 23.26.00
+z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 23.26.07
+z12.png Found at: Point(x=1105, y=78) at: 03.10.2021 - 23.26.14
+z12.png Found at: Point(x=1130, y=80) at: 03.10.2021 - 23.26.22
+z12.png Found at: Point(x=1106, y=78) at: 03.10.2021 - 23.26.29
+z12.png Found at: Point(x=1105, y=80) at: 03.10.2021 - 23.26.36
+z12.png Found at: Point(x=1155, y=78) at: 03.10.2021 - 23.26.49
+Sccessfully Avoided something at: 06.02.2022 - 16.17.49
+Sccessfully Avoided something at: 06.02.2022 - 16.17.54
+Sccessfully Avoided something at: 06.02.2022 - 16.27.52
+Sccessfully Avoided something at: 06.02.2022 - 16.38.51
+Sccessfully Avoided something at: 06.02.2022 - 17.02.48
+Sccessfully Avoided something at: 06.02.2022 - 17.02.54
+Sccessfully Avoided something at: 06.02.2022 - 17.07.44
+Sccessfully Avoided something at: 06.02.2022 - 17.13.02
+Sccessfully Avoided something at: 06.02.2022 - 17.17.11
+Sccessfully Avoided something at: 06.02.2022 - 17.20.35
+Sccessfully Avoided something at: 06.02.2022 - 18.13.11
+Sccessfully Avoided something at: 06.02.2022 - 18.13.48
+Sccessfully Avoided something at: 06.02.2022 - 21.09.11
+Sccessfully Avoided something at: 06.02.2022 - 21.26.03
+Sccessfully Avoided something at: 06.02.2022 - 21.28.35
+Sccessfully Avoided something at: 07.02.2022 - 11.45.19
+Sccessfully Avoided something at: 07.02.2022 - 11.45.23
+Sccessfully Avoided something at: 07.02.2022 - 11.46.48
+Sccessfully Avoided something at: 07.02.2022 - 11.51.42
+Sccessfully Avoided something at: 07.02.2022 - 11.54.53
+Sccessfully Avoided something at: 07.02.2022 - 11.56.08
+Sccessfully Avoided something at: 07.02.2022 - 15.48.53
+Sccessfully Avoided something at: 07.02.2022 - 15.49.18
+Sccessfully Avoided something at: 07.02.2022 - 15.49.55
+Sccessfully Avoided something at: 07.02.2022 - 16.11.50
+Sccessfully Avoided something at: 07.02.2022 - 16.14.18
+Sccessfully Avoided something at: 07.02.2022 - 16.16.17
+Sccessfully Avoided something at: 07.02.2022 - 17.47.30
+Sccessfully Avoided something at: 07.02.2022 - 18.04.42
+Sccessfully Avoided something at: 07.02.2022 - 18.04.42
+Sccessfully Avoided something at: 07.02.2022 - 18.09.10
+Sccessfully Avoided something at: 07.02.2022 - 18.09.10
+Sccessfully Avoided something at: 07.02.2022 - 18.09.10
+Sccessfully Avoided something at: 07.02.2022 - 18.09.11
+Sccessfully Avoided something at: 07.02.2022 - 18.09.11
+Sccessfully Avoided something at: 07.02.2022 - 18.09.11
+Sccessfully Avoided something at: 07.02.2022 - 18.09.11
+Sccessfully Avoided something at: 07.02.2022 - 18.09.11
+Sccessfully Avoided something at: 07.02.2022 - 18.09.11
+Sccessfully Avoided something at: 07.02.2022 - 18.09.12
+Sccessfully Avoided something at: 07.02.2022 - 18.09.12
+Sccessfully Avoided something at: 07.02.2022 - 18.09.12
+Sccessfully Avoided something at: 07.02.2022 - 18.09.12
+Sccessfully Avoided something at: 07.02.2022 - 18.09.12
+Sccessfully Avoided something at: 07.02.2022 - 18.09.12
+Sccessfully Avoided something at: 07.02.2022 - 18.09.12
+Sccessfully Avoided something at: 07.02.2022 - 18.09.13
+Sccessfully Avoided something at: 07.02.2022 - 18.09.13
+Sccessfully Avoided something at: 07.02.2022 - 18.09.13
+Sccessfully Avoided something at: 07.02.2022 - 18.09.13
+Sccessfully Avoided something at: 07.02.2022 - 18.09.13
+Sccessfully Avoided something at: 07.02.2022 - 18.09.13
+Sccessfully Avoided something at: 07.02.2022 - 18.09.13
+Sccessfully Avoided something at: 07.02.2022 - 18.09.13
+Sccessfully Avoided something at: 07.02.2022 - 18.09.14
+Sccessfully Avoided something at: 07.02.2022 - 18.09.14
+Sccessfully Avoided something at: 07.02.2022 - 18.09.14
+Sccessfully Avoided something at: 07.02.2022 - 18.09.14
+Sccessfully Avoided something at: 07.02.2022 - 18.09.14
+Sccessfully Avoided something at: 07.02.2022 - 18.09.14
+Sccessfully Avoided something at: 07.02.2022 - 18.09.14
+Sccessfully Avoided something at: 07.02.2022 - 18.09.14
+Sccessfully Avoided something at: 07.02.2022 - 18.09.14
+Sccessfully Avoided something at: 07.02.2022 - 18.09.15
+Sccessfully Avoided something at: 07.02.2022 - 18.09.15
+Sccessfully Avoided something at: 07.02.2022 - 18.09.15
+Sccessfully Avoided something at: 07.02.2022 - 18.09.15
+Sccessfully Avoided something at: 07.02.2022 - 18.09.15
+Sccessfully Avoided something at: 07.02.2022 - 18.09.15
+Sccessfully Avoided something at: 07.02.2022 - 18.09.15
+Sccessfully Avoided something at: 07.02.2022 - 18.09.20
+Sccessfully Avoided something at: 07.02.2022 - 18.09.20
+Sccessfully Avoided something at: 07.02.2022 - 18.09.20
+Sccessfully Avoided something at: 07.02.2022 - 18.09.20
+Sccessfully Avoided something at: 07.02.2022 - 18.09.20
+Sccessfully Avoided something at: 07.02.2022 - 18.09.20
+Sccessfully Avoided something at: 07.02.2022 - 18.09.20
+Sccessfully Avoided something at: 07.02.2022 - 18.09.20
+Sccessfully Avoided something at: 07.02.2022 - 18.09.20
+Sccessfully Avoided something at: 07.02.2022 - 18.09.20
+Sccessfully Avoided something at: 07.02.2022 - 18.09.21
+Sccessfully Avoided something at: 07.02.2022 - 18.09.21
+Sccessfully Avoided something at: 07.02.2022 - 18.09.21
+Sccessfully Avoided something at: 07.02.2022 - 18.09.21
+Sccessfully Avoided something at: 07.02.2022 - 18.09.21
+Sccessfully Avoided something at: 07.02.2022 - 18.09.21
+Sccessfully Avoided something at: 07.02.2022 - 18.09.21
+Sccessfully Avoided something at: 07.02.2022 - 18.09.21
+Sccessfully Avoided something at: 07.02.2022 - 18.09.21
+Sccessfully Avoided something at: 07.02.2022 - 18.09.21
+Sccessfully Avoided something at: 07.02.2022 - 18.09.22
+Sccessfully Avoided something at: 07.02.2022 - 18.09.22
+Sccessfully Avoided something at: 07.02.2022 - 18.09.22
+Sccessfully Avoided something at: 07.02.2022 - 18.09.22
+Sccessfully Avoided something at: 07.02.2022 - 18.09.22
+Sccessfully Avoided something at: 07.02.2022 - 18.09.22
+Sccessfully Avoided something at: 07.02.2022 - 18.09.22
+Sccessfully Avoided something at: 07.02.2022 - 18.09.22
+Sccessfully Avoided something at: 07.02.2022 - 18.09.22
+Sccessfully Avoided something at: 07.02.2022 - 18.09.22
+Sccessfully Avoided something at: 08.02.2022 - 09.14.29
+Sccessfully Avoided something at: 08.02.2022 - 09.17.04
+Sccessfully Avoided something at: 08.02.2022 - 09.18.13
+Sccessfully Avoided something at: 08.02.2022 - 09.18.13
+Sccessfully Avoided something at: 08.02.2022 - 09.18.13
+Sccessfully Avoided something at: 08.02.2022 - 09.18.13
+Sccessfully Avoided something at: 08.02.2022 - 09.18.13
+Sccessfully Avoided something at: 08.02.2022 - 09.18.13
+Sccessfully Avoided something at: 08.02.2022 - 09.18.14
+Sccessfully Avoided something at: 08.02.2022 - 09.18.14
+Sccessfully Avoided something at: 08.02.2022 - 09.18.14
+Sccessfully Avoided something at: 08.02.2022 - 09.18.14
+Sccessfully Avoided something at: 08.02.2022 - 09.18.14
+Sccessfully Avoided something at: 08.02.2022 - 09.18.14
+Sccessfully Avoided something at: 08.02.2022 - 09.18.14
+Sccessfully Avoided something at: 08.02.2022 - 09.18.14
+Sccessfully Avoided something at: 08.02.2022 - 09.18.14
+Sccessfully Avoided something at: 08.02.2022 - 09.18.15
+Sccessfully Avoided something at: 08.02.2022 - 09.18.15
+Sccessfully Avoided something at: 08.02.2022 - 09.18.15
+Sccessfully Avoided something at: 08.02.2022 - 09.18.15
+Sccessfully Avoided something at: 08.02.2022 - 09.18.15
+Sccessfully Avoided something at: 08.02.2022 - 09.18.15
+Sccessfully Avoided something at: 08.02.2022 - 09.18.15
+Sccessfully Avoided something at: 08.02.2022 - 09.18.15
+Sccessfully Avoided something at: 08.02.2022 - 09.18.15
+Sccessfully Avoided something at: 08.02.2022 - 09.18.15
+Sccessfully Avoided something at: 08.02.2022 - 09.18.16
+Sccessfully Avoided something at: 08.02.2022 - 09.18.16
+Sccessfully Avoided something at: 08.02.2022 - 09.18.16
+Sccessfully Avoided something at: 08.02.2022 - 09.18.16
+Sccessfully Avoided something at: 08.02.2022 - 09.18.16
+Sccessfully Avoided something at: 08.02.2022 - 09.18.16
+Sccessfully Avoided something at: 08.02.2022 - 09.18.16
+Sccessfully Avoided something at: 08.02.2022 - 09.18.16
+Sccessfully Avoided something at: 08.02.2022 - 09.18.16
+Sccessfully Avoided something at: 08.02.2022 - 09.18.16
+Sccessfully Avoided something at: 08.02.2022 - 09.18.17
+Sccessfully Avoided something at: 08.02.2022 - 09.18.17
+Sccessfully Avoided something at: 08.02.2022 - 09.18.17
+Sccessfully Avoided something at: 08.02.2022 - 09.18.17
+Sccessfully Avoided something at: 08.02.2022 - 09.18.17
+Sccessfully Avoided something at: 08.02.2022 - 09.18.17
+Sccessfully Avoided something at: 08.02.2022 - 09.18.17
+Sccessfully Avoided something at: 08.02.2022 - 09.18.17
+Sccessfully Avoided something at: 08.02.2022 - 09.18.17
+Sccessfully Avoided something at: 08.02.2022 - 09.18.17
+Sccessfully Avoided something at: 08.02.2022 - 09.18.18
+Sccessfully Avoided something at: 08.02.2022 - 09.18.18
+Sccessfully Avoided something at: 08.02.2022 - 09.18.18
+Sccessfully Avoided something at: 08.02.2022 - 09.18.18
+Sccessfully Avoided something at: 08.02.2022 - 09.18.18
+Sccessfully Avoided something at: 08.02.2022 - 09.18.18
+Sccessfully Avoided something at: 08.02.2022 - 09.18.18
+Sccessfully Avoided something at: 08.02.2022 - 09.18.18
+Sccessfully Avoided something at: 08.02.2022 - 09.18.18
+Sccessfully Avoided something at: 08.02.2022 - 09.18.19
+Sccessfully Avoided something at: 08.02.2022 - 09.18.19
+Sccessfully Avoided something at: 08.02.2022 - 09.18.19
+Sccessfully Avoided something at: 08.02.2022 - 09.18.19
+Sccessfully Avoided something at: 08.02.2022 - 09.18.19
+Sccessfully Avoided something at: 08.02.2022 - 09.18.19
+Sccessfully Avoided something at: 08.02.2022 - 09.18.19
+Sccessfully Avoided something at: 08.02.2022 - 09.18.19
+Sccessfully Avoided something at: 08.02.2022 - 09.18.19
+Sccessfully Avoided something at: 08.02.2022 - 09.18.19
+Sccessfully Avoided something at: 08.02.2022 - 09.18.20
+Sccessfully Avoided something at: 08.02.2022 - 09.18.20
+Sccessfully Avoided something at: 08.02.2022 - 09.18.20
+Sccessfully Avoided something at: 08.02.2022 - 09.18.20
+Sccessfully Avoided something at: 08.02.2022 - 09.18.20
+Sccessfully Avoided something at: 08.02.2022 - 09.18.20
+Sccessfully Avoided something at: 08.02.2022 - 09.18.20
+Sccessfully Avoided something at: 08.02.2022 - 09.18.20
+Sccessfully Avoided something at: 08.02.2022 - 09.18.20
+Sccessfully Avoided something at: 08.02.2022 - 09.18.21
+Sccessfully Avoided something at: 08.02.2022 - 09.18.21
+Sccessfully Avoided something at: 08.02.2022 - 09.18.21
+Sccessfully Avoided something at: 08.02.2022 - 09.23.58
+Sccessfully Avoided something at: 08.02.2022 - 09.23.59
+Sccessfully Avoided something at: 08.02.2022 - 09.23.59
+Sccessfully Avoided something at: 08.02.2022 - 09.23.59
+Sccessfully Avoided something at: 08.02.2022 - 09.24.00
+Sccessfully Avoided something at: 08.02.2022 - 09.24.00
+Sccessfully Avoided something at: 08.02.2022 - 09.24.01
+Sccessfully Avoided something at: 08.02.2022 - 09.24.01
+Sccessfully Avoided something at: 08.02.2022 - 09.24.01
+Sccessfully Avoided something at: 08.02.2022 - 09.24.02
+Sccessfully Avoided something at: 08.02.2022 - 09.24.02
+Sccessfully Avoided something at: 08.02.2022 - 09.24.02
+Sccessfully Avoided something at: 08.02.2022 - 09.24.03
+Sccessfully Avoided something at: 08.02.2022 - 09.24.03
+Sccessfully Avoided something at: 08.02.2022 - 09.24.04
+Sccessfully Avoided something at: 08.02.2022 - 09.24.04
+Sccessfully Avoided something at: 08.02.2022 - 09.24.04
+Sccessfully Avoided something at: 08.02.2022 - 09.24.05
+Sccessfully Avoided something at: 08.02.2022 - 09.24.05
+Sccessfully Avoided something at: 08.02.2022 - 09.24.05
+Sccessfully Avoided something at: 08.02.2022 - 09.24.06
+Sccessfully Avoided something at: 08.02.2022 - 09.24.06
+Sccessfully Avoided something at: 08.02.2022 - 09.24.11
+Sccessfully Avoided something at: 08.02.2022 - 09.24.11
+Sccessfully Avoided something at: 08.02.2022 - 09.24.11
+Sccessfully Avoided something at: 08.02.2022 - 09.24.11
+Sccessfully Avoided something at: 08.02.2022 - 09.24.11
+Sccessfully Avoided something at: 08.02.2022 - 09.24.11
+Sccessfully Avoided something at: 08.02.2022 - 09.24.12
+Sccessfully Avoided something at: 08.02.2022 - 09.24.12
+Sccessfully Avoided something at: 08.02.2022 - 09.24.12
+Sccessfully Avoided something at: 08.02.2022 - 09.24.12
+Sccessfully Avoided something at: 08.02.2022 - 09.24.12
+Sccessfully Avoided something at: 08.02.2022 - 09.24.13
+Sccessfully Avoided something at: 08.02.2022 - 09.24.13
+Sccessfully Avoided something at: 08.02.2022 - 09.24.13
+Sccessfully Avoided something at: 08.02.2022 - 09.24.13
+Sccessfully Avoided something at: 08.02.2022 - 09.24.13
+Sccessfully Avoided something at: 08.02.2022 - 09.24.14
+Sccessfully Avoided something at: 08.02.2022 - 09.24.14
+Sccessfully Avoided something at: 08.02.2022 - 09.24.14
+Sccessfully Avoided something at: 08.02.2022 - 09.24.14
+Sccessfully Avoided something at: 08.02.2022 - 09.24.15
+Sccessfully Avoided something at: 08.02.2022 - 09.24.15
+Sccessfully Avoided something at: 08.02.2022 - 09.24.15
+Sccessfully Avoided something at: 08.02.2022 - 09.24.15
+Sccessfully Avoided something at: 08.02.2022 - 09.24.16
+Sccessfully Avoided something at: 08.02.2022 - 20.57.21
+Sccessfully Avoided something at: 08.02.2022 - 20.57.53
+Sccessfully Avoided something at: 08.02.2022 - 20.57.56
+Sccessfully Avoided something at: 08.02.2022 - 20.57.59
+Sccessfully Avoided something at: 08.02.2022 - 20.58.05
+Sccessfully Avoided something at: 08.02.2022 - 20.58.11
+Sccessfully Avoided something at: 08.02.2022 - 21.00.08
+Sccessfully Avoided something at: 08.02.2022 - 21.06.23
+Sccessfully Avoided something at: 08.02.2022 - 21.06.37
+Sccessfully Avoided something at: 08.02.2022 - 21.06.43
+Sccessfully Avoided something at: 08.02.2022 - 21.07.13
+Sccessfully Avoided something at: 08.02.2022 - 21.07.19
+Sccessfully Avoided something at: 08.02.2022 - 21.07.22
+Sccessfully Avoided something at: 08.02.2022 - 21.07.25
+Sccessfully Avoided something at: 09.02.2022 - 10.10.35
+Sccessfully Avoided something at: 09.02.2022 - 10.10.41
+Sccessfully Avoided something at: 09.02.2022 - 10.10.55
+Sccessfully Avoided something at: 09.02.2022 - 10.11.01
+Sccessfully Avoided something at: 09.02.2022 - 10.11.32
+Sccessfully Avoided something at: 09.02.2022 - 10.11.38
+Sccessfully Avoided something at: 09.02.2022 - 10.15.14
+Sccessfully Avoided something at: 09.02.2022 - 10.15.17
+Sccessfully Avoided something at: 09.02.2022 - 10.15.23
+Sccessfully Avoided something at: 09.02.2022 - 10.15.26
+Sccessfully Avoided something at: 09.02.2022 - 10.15.32
+Sccessfully Avoided something at: 09.02.2022 - 10.15.44
+Sccessfully Avoided something at: 09.02.2022 - 10.15.49
+Sccessfully Avoided something at: 09.02.2022 - 10.15.55
+Sccessfully Avoided something at: 09.02.2022 - 10.16.01
+Sccessfully Avoided something at: 09.02.2022 - 10.16.07
+Sccessfully Avoided something at: 09.02.2022 - 10.16.13
+Sccessfully Avoided something at: 09.02.2022 - 10.16.19
+Sccessfully Avoided something at: 09.02.2022 - 10.16.51
+Sccessfully Avoided something at: 09.02.2022 - 10.16.53
+Sccessfully Avoided something at: 09.02.2022 - 10.16.57
+Sccessfully Avoided something at: 09.02.2022 - 10.17.07
+Sccessfully Avoided something at: 09.02.2022 - 10.17.18
+Sccessfully Avoided something at: 09.02.2022 - 10.17.19
+Sccessfully Avoided something at: 09.02.2022 - 11.31.49
+Sccessfully Avoided something at: 09.02.2022 - 11.31.58
+Sccessfully Avoided something at: 09.02.2022 - 11.32.04
+Sccessfully Avoided something at: 09.02.2022 - 11.32.07
+Sccessfully Avoided something at: 09.02.2022 - 11.32.46
+Sccessfully Avoided something at: 09.02.2022 - 11.32.52
+Sccessfully Avoided something at: 09.02.2022 - 11.32.55
+Sccessfully Avoided something at: 09.02.2022 - 11.43.28
+Sccessfully Avoided something at: 09.02.2022 - 11.43.39
+Sccessfully Avoided something at: 09.02.2022 - 11.43.50
+Sccessfully Avoided something at: 09.02.2022 - 12.02.07
+Sccessfully Avoided something at: 09.02.2022 - 12.02.13
+Sccessfully Avoided something at: 09.02.2022 - 12.02.24
+Sccessfully Avoided something at: 09.02.2022 - 12.27.18
+Sccessfully Avoided something at: 09.02.2022 - 12.27.29
+Sccessfully Avoided something at: 09.02.2022 - 12.27.40
+Sccessfully Avoided something at: 09.02.2022 - 12.27.51
+Sccessfully Avoided something at: 09.02.2022 - 12.27.57
+Sccessfully Avoided something at: 09.02.2022 - 12.28.08
+Sccessfully Avoided something at: 09.02.2022 - 12.31.47
+Sccessfully Avoided something at: 09.02.2022 - 12.31.58
+Sccessfully Avoided something at: 09.02.2022 - 12.32.09
+Sccessfully Avoided something at: 09.02.2022 - 12.32.20
+Sccessfully Avoided something at: 09.02.2022 - 12.33.00
+Sccessfully Avoided something at: 09.02.2022 - 12.33.13
+Sccessfully Avoided something at: 09.02.2022 - 12.33.21
+Sccessfully Avoided something at: 09.02.2022 - 12.33.29
+Sccessfully Avoided something at: 09.02.2022 - 12.33.29
+Sccessfully Avoided something at: 09.02.2022 - 13.15.20
+Sccessfully Avoided something at: 09.02.2022 - 13.15.35
+Sccessfully Avoided something at: 09.02.2022 - 13.15.50
+Sccessfully Avoided something at: 09.02.2022 - 13.16.05
+Keep Looking - Avoided: 12.1.png at: 09.02.2022 - 13.39.44
+Keep Looking - Avoided: 12.1.png at: 09.02.2022 - 13.46.50
+Keep Looking - Avoided: 12.1.png at: 09.02.2022 - 13.52.31
+Keep Looking - Avoided: 12.1.png at: 09.02.2022 - 13.54.59
+Keep Looking - Avoided: 12.1.png at: 09.02.2022 - 14.13.36
+Keep Looking - Avoided: 12.1.png at: 09.02.2022 - 14.37.58
+Keep Looking - Avoided: 12.1.png at: 09.02.2022 - 14.39.16
+Keep Looking - Avoided: 12.2.png at: 09.02.2022 - 14.40.43
+Keep Looking - Avoided: 12.2.png at: 09.02.2022 - 14.44.49
+Keep Looking - Avoided: 12.2.png at: 09.02.2022 - 15.13.21
+Keep Looking - Avoided: 12.1.png at: 09.02.2022 - 15.13.44
+Keep Looking - Avoided: 12.1.png at: 09.02.2022 - 15.29.30
+Keep Looking - Avoided: 12.1.png at: 09.02.2022 - 15.32.26
+Keep Looking - Avoided: 12.1.png at: 09.02.2022 - 17.07.23
+Keep Looking - Avoided: 12.1.png at: 09.02.2022 - 17.46.39
+Keep Looking - Avoided: 12.1.png at: 09.02.2022 - 17.46.49
+Keep Looking - Avoided: 12.2.png at: 09.02.2022 - 17.48.40
+Keep Looking - Avoided: 12.1.png at: 09.02.2022 - 17.52.25
+Keep Looking - Avoided: 12.2.png at: 10.02.2022 - 08.39.43
+Keep Looking - Avoided: 12.2.png at: 10.02.2022 - 08.41.30
+Keep Looking - Avoided: 12.1.png at: 10.02.2022 - 08.41.51
+Keep Looking - Avoided: 12.1.png at: 10.02.2022 - 08.48.24
+Keep Looking - Avoided: 12.2.png at: 10.02.2022 - 12.57.05
+Keep Looking - Avoided: 12.1.png at: 10.02.2022 - 13.00.34
+Keep Looking - Avoided: 12.2.png at: 10.02.2022 - 13.07.58
+Keep Looking - Avoided: 12.1.png at: 10.02.2022 - 13.08.07
+Keep Looking - Avoided: 12.1.png at: 10.02.2022 - 13.10.14
+Keep Looking - Avoided: 12.2.png at: 10.02.2022 - 13.10.23
+Keep Looking - Avoided: 12.1.png at: 10.02.2022 - 13.10.31
+Keep Looking - Avoided: 12.1.png at: 10.02.2022 - 13.10.40
+Keep Looking - Avoided: 12.1.png at: 11.02.2022 - 14.49.25
+Keep Looking - Avoided: 12.1.png at: 11.02.2022 - 14.50.33
+Keep Looking - Avoided: 12.1.png at: 11.02.2022 - 17.59.39
+Keep Looking - Avoided: 12.2.png at: 16.02.2022 - 15.23.52
+Keep Looking - Avoided: 12.1.png at: 16.02.2022 - 15.24.01
+Keep Looking - Avoided: 12.2.png at: 16.02.2022 - 15.24.10
+Keep Looking - Avoided: 12.1.png at: 16.02.2022 - 15.24.19
+Keep Looking - Avoided: 12.1.png at: 16.02.2022 - 15.24.29
+Keep Looking - Avoided: 12.1.png at: 16.02.2022 - 15.24.38
+Keep Looking - Avoided: 12.2.png at: 16.02.2022 - 15.26.45
+Keep Looking - Avoided: 12.1.png at: 16.02.2022 - 15.26.54
+Keep Looking - Avoided: 12.1.png at: 16.02.2022 - 15.27.03
+Keep Looking - Avoided: 12.2.png at: 16.02.2022 - 15.27.12
+Keep Looking - Avoided: 06.02.2022-21.30.25.png at: 16.02.2022 - 15.27.20
+Keep Looking - Avoided: 12.1.png at: 18.02.2022 - 14.21.19
+Keep Looking - Avoided: 12.1.png at: 18.02.2022 - 14.23.11
+Keep Looking - Avoided: 12.2.png at: 18.02.2022 - 14.35.14
+Keep Looking - Avoided: 12.2.png at: 18.02.2022 - 14.35.25
+Keep Looking - Avoided: 12.2.png at: 18.02.2022 - 14.35.36
+Keep Looking - Avoided: 12.2.png at: 18.02.2022 - 14.35.51
+Keep Looking - Avoided: 12.2.png at: 18.02.2022 - 14.36.02
+Keep Looking - Avoided: 12.2.png at: 18.02.2022 - 14.36.13
+Keep Looking - Avoided: 12.2.png at: 18.02.2022 - 14.36.24
+Keep Looking - Avoided: 12.2.png at: 18.02.2022 - 14.39.11
+Keep Looking - Avoided: 12.1.png at: 18.02.2022 - 14.43.22
+Keep Looking - Avoided: 12.2.png at: 18.02.2022 - 14.43.31
+Keep Looking - Avoided: 12.2.png at: 18.02.2022 - 14.43.40
+Keep Looking - Avoided: 12.2.png at: 18.02.2022 - 14.46.54
+Keep Looking - Avoided: 12.1.png at: 18.02.2022 - 14.47.03
+Keep Looking - Avoided: 12.2.png at: 18.02.2022 - 14.47.12
+Keep Looking - Avoided: 12.2.png at: 18.02.2022 - 14.47.21
+Keep Looking - Avoided: rad.PNG at: 18.02.2022 - 14.53.11
+Keep Looking - Avoided: rad.PNG at: 18.02.2022 - 15.15.07
+Keep Looking - Avoided: rad.PNG at: 18.02.2022 - 15.17.10
+Keep Looking - Avoided: Reya.png at: 18.02.2022 - 15.17.21
+Keep Looking - Avoided: Reya.png at: 18.02.2022 - 16.59.06
+Keep Looking - Avoided: Reya.png at: 19.02.2022 - 08.18.07
+Keep Looking - Avoided: 18.02.2022-15.01.36.png at: 20.02.2022 - 14.24.38
+Keep Looking - Avoided: 18.02.2022-16.59.16.png at: 20.02.2022 - 14.24.47
+Keep Looking - Avoided: 18.02.2022-15.01.36.png at: 20.02.2022 - 14.33.05
+Keep Looking - Avoided: 18.02.2022-15.17.32.png at: 20.02.2022 - 14.33.15
+Keep Looking - Avoided: 18.02.2022-16.58.01.png at: 20.02.2022 - 15.37.11
+Keep Looking - Avoided: 18.02.2022-15.01.36.png at: 20.02.2022 - 15.42.26
+Keep Looking - Avoided: 18.02.2022-15.17.32.png at: 20.02.2022 - 15.42.36
+Keep Looking - Avoided: 18.02.2022-16.58.01.png at: 20.02.2022 - 15.53.25
+Keep Looking - Avoided: 18.02.2022-15.01.36.png at: 20.02.2022 - 15.55.29
+Keep Looking - Avoided: 18.02.2022-16.58.01.png at: 20.02.2022 - 15.55.39
+Keep Looking - Avoided: 18.02.2022-16.58.01.png at: 20.02.2022 - 16.04.36
+Keep Looking - Avoided: 18.02.2022-16.58.01.png at: 20.02.2022 - 16.07.32
+Keep Looking - Avoided: 18.02.2022-15.01.36.png at: 20.02.2022 - 16.10.05
+Keep Looking - Avoided: 18.02.2022-16.58.01.png at: 20.02.2022 - 16.10.16
+Keep Looking - Avoided: 18.02.2022-16.58.01.png at: 20.02.2022 - 16.31.18
+Keep Looking - Avoided: 18.02.2022-16.58.01.png at: 20.02.2022 - 16.50.41
+Keep Looking - Avoided: 18.02.2022-16.58.01.png at: 20.02.2022 - 18.24.22
