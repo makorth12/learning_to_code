@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 
 
-class Vision:
+class MatchTemplate_Vision:
 
     # properties
     needle_img = None
@@ -25,14 +25,7 @@ class Vision:
     def find(self, haystack_img, threshold=0.5, debug_mode=None, im_show_window_name=None):
         # run the OpenCV algorithm
         result = cv.matchTemplate(haystack_img, self.needle_img, self.method)
-
-        # Get the all the positions from the match result that exceed our threshold
-        # DIFFERENT LOCATIONS PER DIFFERENT METHOD 
-        
-        #TM_CCOEFF_NORMED
         locations = np.where(result >= threshold)
-        # TM_SQDIFF_NORMED
-        #locations = np.where(result <= threshold)
         locations = list(zip(*locations[::-1]))
         rectangles = []
         for loc in locations:
@@ -47,10 +40,6 @@ class Vision:
         if len(rectangles):
             line_color = (0, 255, 0)
             line_type = cv.LINE_4
-            marker_color1 = (255, 0, 0)
-            marker_color2 = (0, 255, 0)
-            marker_color3 = (0, 0, 255)
-            marker_type = cv.MARKER_CROSS
 
             # Loop over all the rectangles
             for (x, y, w, h) in rectangles:
@@ -68,25 +57,15 @@ class Vision:
                     # Draw the box
                     cv.rectangle(haystack_img, top_left, bottom_right, color=line_color, 
                                 lineType=line_type, thickness=2)
-                elif debug_mode == 'points1':
-                    # Draw the center point
-                    cv.drawMarker(haystack_img, (center_x, center_y), 
-                                color=marker_color1, markerType=marker_type, 
-                                markerSize=40, thickness=2)
-                elif debug_mode == 'points2':
-                    # Draw the center point
-                    cv.drawMarker(haystack_img, (center_x, center_y), 
-                                color=marker_color2, markerType=marker_type, 
-                                markerSize=40, thickness=2)
-                elif debug_mode == 'points3':
-                    # Draw the center point
-                    cv.drawMarker(haystack_img, (center_x, center_y), 
-                                color=marker_color3, markerType=marker_type, 
-                                markerSize=40, thickness=2)                                
-
 
         ############ DISPLAYS MATCHES #############
         if debug_mode:
             cv.imshow(im_show_window_name, haystack_img)
 
+        if cv.waitKey(1) == ord('q'):
+            cv.destroyAllWindows()
+
         return points
+                         
+
+ 

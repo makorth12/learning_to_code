@@ -402,4 +402,9 @@ FodyWeavers.xsd
 tools/
 stack/
 archive/
-
+test/
+images/
+defeat/
+victory/
+timeout/
+attackedShips/

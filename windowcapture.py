@@ -31,8 +31,8 @@ class WindowCapture:
 
         # account for the window border and titlebar and cut them off
         border_pixels = 0
-        titlebar_pixels = 0
-        self.w = self.w - (border_pixels * 2)
+        titlebar_pixels = 5
+        self.w = self.w - border_pixels
         self.h = self.h - titlebar_pixels - border_pixels
         self.cropped_x = border_pixels
         self.cropped_y = titlebar_pixels
@@ -66,7 +66,6 @@ class WindowCapture:
         win32gui.DeleteObject(dataBitMap.GetHandle())
         img = img[...,:3]
         img = np.ascontiguousarray(img)
-
         return img
 
     @staticmethod
