@@ -204,7 +204,7 @@ def shipDetection(image_list):
     # start timer
 
     t0 = time.time()
-    nbLoop = len(image_list)
+    res = False
 
     for i, img in enumerate(image_list):
 
@@ -243,20 +243,14 @@ def shipDetection(image_list):
             cv.waitKey(1)       
 
             keep_looking(log)
-            time.sleep(1)
-
-            ts = time.time() - t0
-            tdp = "{:.2f}".format(ts)
-            print('Loop Time:',tdp)
-
-            return True  
+            res = True
+            break
 
         
     ts = time.time() - t0
     tdp = "{:.2f}".format(ts)
     print('Loop Time:',tdp)
-
-    return False
+    return res
 
 
 

@@ -2682,3 +2682,7 @@ Found something to attack at: 06.05.2022 - 14.13.50
 Found something to attack at: 06.05.2022 - 14.18.02
 Found something to attack at: 06.05.2022 - 14.19.39
 Found something to attack at: 06.05.2022 - 14.21.27
+Found something to attack at: 06.05.2022 - 14.46.50
+Found something to attack at: 06.05.2022 - 14.47.24
+Found something to attack at: 06.05.2022 - 14.52.26
+Found something to attack at: 06.05.2022 - 14.53.54
