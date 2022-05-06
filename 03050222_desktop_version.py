@@ -199,13 +199,12 @@ def videoLoop():
     return haystack
 
 def shipDetection(image_list):
-    # Object Detection
     counter = 0
     # start timer
-
     t0 = time.time()
     res = False
 
+    # Object Detection
     for i, img in enumerate(image_list):
 
         counter += 1       
@@ -245,14 +244,11 @@ def shipDetection(image_list):
             keep_looking(log)
             res = True
             break
-
         
     ts = time.time() - t0
     tdp = "{:.2f}".format(ts)
     print('Loop Time:',tdp)
     return res
-
-
 
 def prepare_objectDetection():
     print("Preparing Object Detection...")
