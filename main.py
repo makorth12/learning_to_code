@@ -1,4 +1,4 @@
-import queue
+import sys
 import cv2 as cv
 import numpy as np
 import os
@@ -7,7 +7,6 @@ import glob
 import time
 import shutil
 import pygetwindow
-import queue
 import threading
 import time
 import subprocess
@@ -35,8 +34,10 @@ ammo = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual
 level = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\levelup\arrow.png'
 refit = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\refit\shipReadyToRefitIcon.png'
 pvp = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\pvp\pvp.png'
+llpvp = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\pvp\llpvp.png'
 attack_img = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\attack\attack.png'
 scan = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\scan.png'
+dailyBattleLimit = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\dailyBattleLimit.png'
 
 items = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\items.png'
 item_repair = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\item_repair.png'
@@ -73,7 +74,9 @@ scratchy = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipAc
 plus = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\plus.png'
 reachedSellingLimit = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\reachedSellingLimit.png'
 addedToMarket = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\addedToMarket.png'
+match = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\match.png'
 
+attack_image = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\attack.png'
 
 gas = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\rss\gas.png'
 minerals = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\rss\mins.png'
@@ -100,6 +103,7 @@ two = 869, 540
 five = 894, 591
 confirm = 1192, 764
 ok = 956, 661
+use = 809, 667
 
 def refit_check():
     while True:
@@ -135,19 +139,31 @@ def repair(yes):
         r,g,b = py.pixel(item_repair_pixel_x, item_repair_pixel_y)
         if g == 49 and items_menu != None:
             print("Reparing ship with an item...")
-            py.click(items_menu)
-            time.sleep(1)
-            repair_item = py.locateCenterOnScreen(item_repair, region=(16, 938, 93, 1023), confidence=0.92)
-            py.click(repair_item)
-            time.sleep(1)
-            py.click(825, 664)
-            time.sleep(1)
-            py.click(yes)
-            time.sleep(1)
-            click_ok()
-            time.sleep(1)
-            print("Ship repaired with an item!")
-            time.sleep(3)
+            checkBottomBarFound = py.locateCenterOnScreen(checkBottomBar, region=(1146, 904, 1219-1146, 942-904), confidence=0.80, grayscale=True)
+            # if drawer closed
+            if checkBottomBarFound == None:
+                itemMenuFound = py.locateCenterOnScreen(items, region=(159, 855, 268-159, 1031-855), confidence=0.80, grayscale=True)
+                if itemMenuFound != None: py.click(itemMenuFound)
+                time.sleep(1)
+                itemMenuFound = py.locateCenterOnScreen(items, region=(159, 855, 268-159, 1031-855), confidence=0.80, grayscale=True)
+                x = itemMenuFound[0]
+                y = itemMenuFound[1]
+                py.click(x+350, y)
+                time.sleep(1)
+                py.moveTo(548, 846)
+                py.dragTo(548, 168, 0.3, button='left')
+                time.sleep(1)
+                py.moveTo(500, 621)
+                py.dragTo(500, 700, 0.8, button='left')
+                time.sleep(1)
+                py.click(535,593)
+                itemRepairFound = py.locateCenterOnScreen(item_repair, region=(0, 938, 100-0, 1021,938), confidence=0.80, grayscale=True)
+                py.click(itemRepairFound)
+                time.sleep(0.5)
+                py.click(use)
+                time.sleep(0.5)
+                py.click(yes)
+                time.sleep(3)
 
         if galaxy_button and health_bar != None:
             r,g,b = py.pixel(bux_repair_pixel_x, bux_repair_pixel_y)
@@ -344,11 +360,16 @@ def prepare_objectDetection():
     print("Finished preparing Object Detection!")
 
 def attack():
-    py.moveTo(1415,1000,0.1)
-    time.sleep(0.01)
-    attackLog()
-    py.click()
-    time.sleep(3)
+    foundAttack = py.locateCenterOnScreen(attack_img, region=(1300, 926, 1887-1300, 1027-926), confidence=0.94, grayscale=True) 
+    if foundAttack != None:
+        print("Found attack button!")
+        py.moveTo(foundAttack)
+        time.sleep(1)
+        attackLog()
+        print("Clicking attack button...")
+        py.click(foundAttack)
+        print("Clicked attack button!")
+        time.sleep(3)
 
 def click_galaxy():
     for i in range(3,0,-1):
@@ -426,18 +447,19 @@ def listeners():
         foundCaptainCleared = py.locateCenterOnScreen(captain_cleared_image, region=(661, 483, 1040-661, 591-483), confidence=0.94, grayscale=True)
         foundAnotherUser = py.locateCenterOnScreen(another_user_image, region=(678, 444, 1221-678, 606-444), confidence=0.94, grayscale=True)
         foundReload = py.locateCenterOnScreen(reload, region=(861, 653, 1022-861, 689-653), confidence=0.94, grayscale=True)
-        foundReconnect = py.locateCenterOnScreen(reconnect, region=(678, 444, 1221-678, 606-444), confidence=0.94, grayscale=True)
+        foundReconnect = py.locateCenterOnScreen(reconnect, region=(839, 642, 1060-839, 694-642), confidence=0.94, grayscale=True)
         foundConnectionError = py.locateCenterOnScreen(connectionError, region=(678, 444, 1221-678, 606-444), confidence=0.94, grayscale=True)
         foundPVP = py.locateCenterOnScreen(pvp, region=(540, 874, 1381-540, 1033-874), confidence=0.94, grayscale=True)
+        foundLLPVP = py.locateCenterOnScreen(llpvp, region=(540, 874, 1381-540, 1033-874), confidence=0.94, grayscale=True)
         foundVictory = py.locateCenterOnScreen(victory_image, region=(600, 213, 1245-600, 609-213), confidence=0.94, grayscale=True) 
-        foundDefeat = py.locateCenterOnScreen(defeat_image, region=(600, 213, 1245-600, 609-213), confidence=0.94, grayscale=True)
+        foundDefeat = py.locateCenterOnScreen(defeat_image, region=(600, 213, 1245-600, 609-213), confidence=0.90, grayscale=True)
         foundTimeout = py.locateCenterOnScreen(timeout_image, region=(600, 213, 1245-600, 609-213), confidence=0.94, grayscale=True)
         foundEscape = py.locateCenterOnScreen(escape_image, region=(600, 213, 1245-600, 609-213), confidence=0.94, grayscale=True)
         playAnywayFound = py.locateCenterOnScreen(playAnyway, region=(523, 405, 1280-523, 790-405), confidence=0.94, grayscale=True)
         click_to_escape_from_battleFound = py.locateCenterOnScreen(click_to_escape_from_battle, region=(7, 32, 151-7, 86-32), confidence=0.90, grayscale=True)
         foundLockedOut = py.locateCenterOnScreen(lockedOut, region=(795, 399, 949-795, 466-399), confidence=0.94, grayscale=True)
         foundbadgateway = py.locateCenterOnScreen(badgateway, region=(691, 357, 1220-691, 583-357), confidence=0.94, grayscale=True)
-
+        founddailyBattleLimit = py.locateCenterOnScreen(dailyBattleLimit, region=(619, 920, 962-619, 966-920), confidence=0.94, grayscale=True)
 
         if foundLeague != None:
             time.sleep(2)
@@ -508,6 +530,29 @@ def listeners():
             time.sleep(1)
             ShipDamage()
             detection()
+
+        if foundLLPVP != None:
+            time.sleep(1)
+            print('Clicking LL PvP...')
+            time.sleep(1)
+            py.click(foundLLPVP)
+            print('Clicked LL PvP!')
+            time.sleep(1)
+            print('Clicking LL Match...')
+            time.sleep(1)
+            foundMatch = py.locateCenterOnScreen(match, region=(871, 855, 1047-871, 909-855), confidence=0.94, grayscale=True)
+            time.sleep(1)
+            py.click(foundMatch)
+            print('Clicked match!')
+            time.sleep(1)
+            ShipDamage()
+            time.sleep(10)
+            attack()
+
+        if founddailyBattleLimit != None: 
+            time.sleep(1)
+            print('Finished LL for today, exiting...')
+            sys.exit()
 
         if foundVictory != None:
             moveScreenshot(victory_directory)
@@ -582,6 +627,8 @@ def detection():
 
 def buy_things():
     buy(gas, currency_gas_location, item='Scratchy', y_offset=0)
+    time.sleep(3)
+    buy(minerals, currency_min_location, item='Scratchy',y_offset=0)
     #buy(minerals, currency_min_location, item='Scrap',y_offset=-81)
 
 def buy(rss, currency_location, item, y_offset):
@@ -631,11 +678,20 @@ def checkIfProcessRunning(processName):
     return True;
 
 def main():
-    count = 0 
+    # initiate attack count
+    count = 1 
+    # initiate time
     t0 = time.time()
+    # specify 4 minutes / 240 seconds 
     t1 = 240
     while True:
-        count = count + 1
+        # print("Pause Count: " + str(count))
+        # check if attack count = 5 
+        # if count % 5 == False:
+        #     print("Sleeping for 45 minutes...")
+        #     time.sleep(2700)
+        #     print("Finsihed sleeping!")
+
         # if not running start 
         if checkIfProcessRunning('Pixel Starships.exe'):
             start()
@@ -653,7 +709,7 @@ def main():
             buy_things()
             time.sleep(1)
             print("Sell Count: " + str(count))
-            if count % 20 == True:
+            if count % 20 == False:
                 collectSell()
 
         t2 = t0-t1
@@ -663,6 +719,7 @@ def main():
             extend()
             t1 = t0 + 240
         else:
+            count = count + 1
             click_galaxy()    
 
 def extend():
@@ -706,63 +763,65 @@ def collectSell():
         py.dragTo(500, 685, 0.8, button='left')
         time.sleep(1)
         py.click(500,635)
+
         scratchyFound = py.locateCenterOnScreen(scratchy, region=(0, 938, 100-0, 1021,938), confidence=0.80, grayscale=True)
-        py.click(scratchyFound)
-        time.sleep(0.5)
-        py.click(sell)    
-        time.sleep(0.5)
-        py.click(backspace)
-        time.sleep(0.5)
-        py.click(two)
-        time.sleep(0.5)
-        for x in range(19): 
-            plusFound = py.locateCenterOnScreen(plus, region=(1036, 304, 1100-1036, 357-304), confidence=0.92, grayscale=True)
-            py.click(plusFound)
-        py.click(confirm)
-        time.sleep(0.5)
-        py.click(yes)
-        time.sleep(1.5)
-        reachedSellingLimitFound = py.locateCenterOnScreen(reachedSellingLimit, region=(651, 455, 983-651, 534-455), confidence=0.80, grayscale=True)
-        if reachedSellingLimitFound != None: py.click(ok), py.click(1528, 228, clicks=2) 
+        if scratchyFound != None:
+            py.click(scratchyFound)
+            time.sleep(0.5)
+            py.click(sell)    
+            time.sleep(0.5)
+            py.click(backspace)
+            time.sleep(0.5)
+            py.click(two)
+            time.sleep(0.5)
+            for x in range(19): 
+                plusFound = py.locateCenterOnScreen(plus, region=(1036, 304, 1100-1036, 357-304), confidence=0.92, grayscale=True)
+                py.click(plusFound)
+            py.click(confirm)
+            time.sleep(0.5)
+            py.click(yes)
+            time.sleep(1.5)
+            reachedSellingLimitFound = py.locateCenterOnScreen(reachedSellingLimit, region=(651, 455, 983-651, 534-455), confidence=0.80, grayscale=True)
+            if reachedSellingLimitFound != None: py.click(ok), py.click(1528, 228, clicks=2) 
 
-        addedToMarketFound = py.locateCenterOnScreen(addedToMarket, region=(722, 479, 1199-722, 543-479), confidence=0.80, grayscale=True)
-        if addedToMarketFound != None: py.click(ok), py.click(1528, 228, clicks=1) 
+            addedToMarketFound = py.locateCenterOnScreen(addedToMarket, region=(722, 479, 1199-722, 543-479), confidence=0.80, grayscale=True)
+            if addedToMarketFound != None: py.click(ok), py.click(1528, 228, clicks=1) 
 
-    # if drawer open    
-    else: 
-        itemMenuFound = py.locateCenterOnScreen(items, region=(159, 855, 268-159, 1031-855), confidence=0.80, grayscale=True)
-        x = itemMenuFound[0]
-        y = itemMenuFound[1]
-        py.click(x+350, y)
-        time.sleep(1)
-        py.moveTo(548, 846)
-        py.dragTo(548, 168, 0.3, button='left')
-        time.sleep(1)
-        py.moveTo(500, 621)
-        py.dragTo(500, 685, 0.8, button='left')
-        time.sleep(1)
-        py.click(500,635)
-        scratchyFound = py.locateCenterOnScreen(scratchy, region=(0, 938, 100-0, 1021-938), confidence=0.80, grayscale=True)
-        py.click(scratchyFound)
-        time.sleep(0.5)
-        py.click(sell)
-        time.sleep(0.5)
-        py.click(backspace)
-        time.sleep(0.5)
-        py.click(two)
-        time.sleep(0.5)
-        for x in range(19): 
-            plusFound = py.locateCenterOnScreen(plus, region=(1036, 304, 1100-1036, 357-304), confidence=0.92, grayscale=True)
-            py.click(plusFound)
-        py.click(confirm)
-        time.sleep(0.5)
-        py.click(yes)
-        time.sleep(1.5)
-        reachedSellingLimitFound = py.locateCenterOnScreen(reachedSellingLimit, region=(651, 455, 983-651, 534-455), confidence=0.80, grayscale=True)
-        if reachedSellingLimitFound != None: py.click(ok), py.click(1528, 228, clicks=2) 
+        # if drawer open    
+        else: 
+            itemMenuFound = py.locateCenterOnScreen(items, region=(159, 855, 268-159, 1031-855), confidence=0.80, grayscale=True)
+            x = itemMenuFound[0]
+            y = itemMenuFound[1]
+            py.click(x+350, y)
+            time.sleep(1)
+            py.moveTo(548, 846)
+            py.dragTo(548, 168, 0.3, button='left')
+            time.sleep(1)
+            py.moveTo(500, 621)
+            py.dragTo(500, 685, 0.8, button='left')
+            time.sleep(1)
+            py.click(500,635)
+            scratchyFound = py.locateCenterOnScreen(scratchy, region=(0, 938, 100-0, 1021-938), confidence=0.80, grayscale=True)
+            py.click(scratchyFound)
+            time.sleep(0.5)
+            py.click(sell)
+            time.sleep(0.5)
+            py.click(backspace)
+            time.sleep(0.5)
+            py.click(two)
+            time.sleep(0.5)
+            for x in range(19): 
+                plusFound = py.locateCenterOnScreen(plus, region=(1036, 304, 1100-1036, 357-304), confidence=0.92, grayscale=True)
+                py.click(plusFound)
+            py.click(confirm)
+            time.sleep(0.5)
+            py.click(yes)
+            time.sleep(1.5)
+            reachedSellingLimitFound = py.locateCenterOnScreen(reachedSellingLimit, region=(651, 455, 983-651, 534-455), confidence=0.80, grayscale=True)
+            if reachedSellingLimitFound != None: py.click(ok), py.click(1528, 228, clicks=2) 
 
-        addedToMarketFound = py.locateCenterOnScreen(addedToMarket, region=(722, 479, 1199-722, 543-479), confidence=0.80, grayscale=True)
-        if addedToMarketFound != None: py.click(ok), py.click(1528, 228, clicks=1) 
+            addedToMarketFound = py.locateCenterOnScreen(addedToMarket, region=(722, 479, 1199-722, 543-479), confidence=0.80, grayscale=True)
+            if addedToMarketFound != None: py.click(ok), py.click(1528, 228, clicks=1) 
 
 #######################################
 ########## MAIN BOT SCRIPT ############
