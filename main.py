@@ -1,6 +1,7 @@
 from dataclasses import asdict
 import sys
 import cv2 as cv
+from cv2 import CAP_CMU1394
 import numpy as np
 import os
 import pyautogui as py
@@ -81,6 +82,9 @@ attack_image = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidSh
 
 gas = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\rss\gas.png'
 minerals = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\rss\mins.png'
+
+cm1 = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\cms\cm1.png'
+cm2 = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\cms\cm2.png'
 
 currency_gas_location = 422, 545
 currency_min_location = 422, 481
@@ -456,6 +460,13 @@ def listeners():
         foundLockedOut = py.locateCenterOnScreen(lockedOut, region=(795, 399, 949-795, 466-399), confidence=0.94, grayscale=True)
         foundbadgateway = py.locateCenterOnScreen(badgateway, region=(691, 357, 1220-691, 583-357), confidence=0.94, grayscale=True)
         founddailyBattleLimit = py.locateCenterOnScreen(dailyBattleLimit, region=(619, 920, 962-619, 966-920), confidence=0.94, grayscale=True)
+
+        foundCM1 = py.locateCenterOnScreen(cm1, region=(753, 69, 1034-753, 117-69), confidence=0.85, grayscale=True)
+        foundCM2 = py.locateCenterOnScreen(cm2, region=(753, 69, 1034-753, 117-69), confidence=0.85, grayscale=True)
+
+        if foundCM1 or foundCM2 != None:
+            py.click(keep_looking)
+            print("Skipped a CM")
 
         if foundLeague != None:
             time.sleep(2)
