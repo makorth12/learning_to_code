@@ -1,3 +1,4 @@
+from dataclasses import asdict
 import sys
 import cv2 as cv
 import numpy as np
@@ -82,7 +83,7 @@ gas = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\
 minerals = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\rss\mins.png'
 
 currency_gas_location = 422, 545
-currency_min_location = 412, 481
+currency_min_location = 422, 481
 
 keyboard = Controller()
 
@@ -317,13 +318,13 @@ def shipDetection(needle_kp1_desc):
 
         # get an updated image of the screen & crop it  
         keypoint_haystack = get_haystack_image()
-        keypoint_haystack = keypoint_haystack[30:125, 800:1200]
+        keypoint_haystack = keypoint_haystack[40:110, 850:1000]
 
-        kp2, matches, match_points, ship_avoided = match_keypoints(counter, name, kp1, descriptors_needle, keypoint_haystack, min_match_count=70)     
+        kp2, matches, match_points, ship_avoided = match_keypoints(counter, name, kp1, descriptors_needle, keypoint_haystack, min_match_count=50)     
         # display the matches
         match_image = cv.drawMatches(needle_img, kp1, keypoint_haystack, kp2, matches, None)
         cv.imshow('Keypoint Search', match_image)
-        cv.moveWindow("Keypoint Search",1,-200)
+        cv.moveWindow("Keypoint Search",1940,30)
         cv.waitKey(1)       
 
         if match_points:
@@ -337,7 +338,7 @@ def shipDetection(needle_kp1_desc):
 
             # display the processed image
             cv.imshow('Keypoint Search', match_image)
-            cv.moveWindow("Keypoint Search",1,-200)
+            cv.moveWindow("Keypoint Search",1940,30)
             cv.waitKey(1)       
             keep_looking()
             file_to_open = '.Ships Avoided.txt'
@@ -356,20 +357,15 @@ def shipDetection(needle_kp1_desc):
 def prepare_objectDetection():
     print("Preparing Object Detection...")
     py.moveTo(921, 415)
-    py.dragTo(921, 815, 0.3, button='left')
+    py.dragTo(921, 815, 0.6, button='left')
     print("Finished preparing Object Detection!")
 
 def attack():
     foundAttack = py.locateCenterOnScreen(attack_img, region=(1300, 926, 1887-1300, 1027-926), confidence=0.94, grayscale=True) 
     if foundAttack != None:
-        print("Found attack button!")
-        py.moveTo(foundAttack)
-        time.sleep(1)
-        attackLog()
         print("Clicking attack button...")
         py.click(foundAttack)
         print("Clicked attack button!")
-        time.sleep(3)
 
 def click_galaxy():
     for i in range(3,0,-1):
@@ -510,6 +506,7 @@ def listeners():
             time.sleep(2)
             py.click(953, 660)
             print("Clicked another user has taken this ship button.")
+            time.sleep(3)
 
         if foundReload or foundReconnect != None:
             time.sleep(120)
@@ -523,13 +520,16 @@ def listeners():
         
         if foundPVP != None:
             time.sleep(1)
-            print('Clicking PvP...')
+            print('Loading updated ships to avoid list...')
+            ships_to_avoid = loadImages(avoid) 
+            needle_kp1_desc = preProcessNeedle(ships_to_avoid)    
+            print('Loaded')
             time.sleep(1)
+            print('Clicking PvP...')
             py.click(foundPVP)
             print('Clicked PvP!')
-            time.sleep(1)
             ShipDamage()
-            detection()
+            detection(needle_kp1_desc)
 
         if foundLLPVP != None:
             time.sleep(1)
@@ -609,53 +609,61 @@ def listeners():
             py.click(ok)
             print("Clicked Bad Gateway ok.")
 
-def detection():    
+def detection(needle_kp1_desc):    
     while True:   
-        ships_to_avoid = loadImages(avoid) 
-        needle_kp1_desc = preProcessNeedle(ships_to_avoid)    
         # check if ready to run detection
         foundScan = py.locateCenterOnScreen(scan, region=(1612, 52, 1882-1612, 111-52), confidence=0.94, grayscale=True)
         if foundScan != None:
-            # load images to detect 
             prepare_objectDetection()
-            print("Starting evasive maneuvers!")
+            print("Scanning ship...")
             if shipDetection(needle_kp1_desc):
+                print("Scan complete, avoid!")
+                time.sleep(2)
                 continue
             else:
+                print("Scan complete, attack!")
+                attackLog()
+                time.sleep(1)
                 attack()
+                time.sleep(2)
                 return              
 
 def buy_things():
-    buy(gas, currency_gas_location, item='Scratchy', y_offset=0)
-    time.sleep(3)
-    buy(minerals, currency_min_location, item='Scratchy',y_offset=0)
-    #buy(minerals, currency_min_location, item='Scrap',y_offset=-81)
+    foundGas = py.locateCenterOnScreen(gas, region=(0, 224, 100-0, 437-224), confidence=0.97, grayscale=True)
+    if foundGas != None:
+        buy(currency_gas_location, item='Scratchy', y_offset=0)
+        time.sleep(3)
+    
+    foundMins = py.locateCenterOnScreen(minerals, region=(0, 224, 100-0, 437-224), confidence=0.97, grayscale=True)
+    if foundMins != None:
+        buy(currency_min_location, item='Scratchy', y_offset=0)
+        time.sleep(3)
+        #buy(currency_min_location, item='Scrap',y_offset=-81)
 
-def buy(rss, currency_location, item, y_offset):
-    ready = py.locateCenterOnScreen(rss, region=(0, 236, 95-0, 452-236),confidence=0.94, grayscale=True)
-    if ready != None:
-        py.click(1878, 56)                      # click chat icon
-        time.sleep(1)
-        py.click(608, 226)                      # click market 
-        time.sleep(1)
-        py.click(1752, 330)                     # click search
-        time.sleep(1)
-        py.click(135, 1005)                     # click text input bar
-        time.sleep(1)
-        keyboard.type(item)
-        time.sleep(2)
-        py.click(1729, 932 + y_offset)          # select item
-        time.sleep(2)
-        py.click(419, 322)                      # click currency 
-        time.sleep(2)
-        py.click(currency_location)             # click gas
-        time.sleep(3)
-        py.click(1684, 994)                     # buy item
-        time.sleep(2)
-        py.click(1096, 581)                     # confirm purchase 
-        time.sleep(1)
-        py.click(1796, 140)                     # close window
-        time.sleep(3)
+def buy(currency_location, item, y_offset):
+    py.click(1878, 56)                      # click chat icon
+    time.sleep(1)
+    py.click(608, 226)                      # click market 
+    time.sleep(1)
+    py.click(1752, 330)                     # click search
+    time.sleep(1)
+    py.click(135, 1005)                     # click text input bar
+    time.sleep(1)
+    keyboard.type(item)
+    time.sleep(2)
+    py.click(1729, 932 + y_offset)          # select item
+    time.sleep(2)
+    py.click(419, 322)                      # click currency 
+    time.sleep(2)
+    py.click(currency_location)             # click gas
+    time.sleep(3)
+    py.click(1684, 994)                     # buy item
+    time.sleep(2)
+    py.click(1096, 581)                     # confirm purchase 
+
+    time.sleep(1)
+    py.click(1796, 140)                     # close window
+    time.sleep(3)
 
 def start():
     subprocess.call([r"C:\Program Files (x86)\Steam\Steam.exe","-applaunch"," 378760","-fullscreen"])
@@ -678,58 +686,53 @@ def checkIfProcessRunning(processName):
     return True;
 
 def main():
-    # initiate attack count
     count = 1 
-    # initiate time
-    t0 = time.time()
-    # specify 4 minutes / 240 seconds 
-    t1 = 240
     while True:
         # print("Pause Count: " + str(count))
         # check if attack count = 5 
         # if count % 5 == False:
-        #     print("Sleeping for 45 minutes...")
-        #     time.sleep(2700)
-        #     print("Finsihed sleeping!")
+        # #     print("Sleeping for 45 minutes...")
+        # #     time.sleep(2700)
+        # #     print("Finsihed sleeping!")
+
+        #     for i in range(360,0,-1):
+        #         print(f"Sleeping for... {i}", end="\r", flush=True)
+        #         time.sleep(1)
 
         # if not running start 
         if checkIfProcessRunning('Pixel Starships.exe'):
             start()
-            time.sleep(10)
             # maximise window
-            py.click(1857, 32)
+            time.sleep(8)
+            py.click(800, 150)
+            py.keyDown('winleft')
+            py.press('up')
+            py.keyUp('winleft')
 
         if refit_check() == 1:
             ammo_reload()
             time.sleep(1)
             repair(yes)
             time.sleep(1)
-            #levelup(level_icon, level_y_0, level_y_1, level_x_0, level_x_1, level_x_adjustment, level_y_adjustment)
-            #time.sleep(1)
             buy_things()
             time.sleep(1)
+            
             print("Sell Count: " + str(count))
-            if count % 20 == False:
+            if count % 50 == False:
                 collectSell()
 
-        t2 = t0-t1
-        print("Time Elapsed: " + str(t2))
-
-        if (t0 := time.time()) >= t1:
-            extend()
-            t1 = t0 + 240
-        else:
-            count = count + 1
             click_galaxy()    
-
+            count = count + 1
+            
 def extend():
-    # if not selling start 
+    # if not selling or in a ship battle, stop 
     chatFound = py.locateCenterOnScreen(chat_image, region=(738, 70, 1198-738, 158-70), confidence=0.94, grayscale=True) 
-    if chatFound is None:
-        # if not in a ship battle, stop
-        extendCheckFound = py.locateCenterOnScreen(extendCheck, region=(854, 29, 1035-854, 74-29), confidence=0.94, grayscale=True) 
-        if extendCheckFound == None:
-            stop()
+    extendCheckFound = py.locateCenterOnScreen(extendCheck, region=(854, 29, 1035-854, 74-29), confidence=0.94, grayscale=True) 
+
+    if chatFound or extendCheckFound is None:
+        stop()
+    else:
+        pass
 
 def collectSell():
     py.click(chat)
@@ -749,20 +752,20 @@ def collectSell():
     # if drawer closed
     if checkBottomBarFound == None:
         itemMenuFound = py.locateCenterOnScreen(items, region=(159, 855, 268-159, 1031-855), confidence=0.80, grayscale=True)
-        if itemMenuFound != None: py.click(itemMenuFound)
-        time.sleep(1)
-        itemMenuFound = py.locateCenterOnScreen(items, region=(159, 855, 268-159, 1031-855), confidence=0.80, grayscale=True)
-        x = itemMenuFound[0]
-        y = itemMenuFound[1]
-        py.click(x+350, y)
-        time.sleep(1)
-        py.moveTo(548, 846)
-        py.dragTo(548, 168, 0.3, button='left')
-        time.sleep(1)
-        py.moveTo(500, 621)
-        py.dragTo(500, 685, 0.8, button='left')
-        time.sleep(1)
-        py.click(500,635)
+        if itemMenuFound != None: 
+            py.click(itemMenuFound)
+            itemMenuFound = py.locateCenterOnScreen(items, region=(159, 855, 268-159, 1031-855), confidence=0.80, grayscale=True)
+            x = itemMenuFound[0]
+            y = itemMenuFound[1]
+            py.click(x+350, y)
+            time.sleep(1)
+            py.moveTo(548, 846)
+            py.dragTo(548, 168, 0.3, button='left')
+            time.sleep(1)
+            py.moveTo(500, 621)
+            py.dragTo(500, 685, 0.8, button='left')
+            time.sleep(1)
+            py.click(500,635)
 
         scratchyFound = py.locateCenterOnScreen(scratchy, region=(0, 938, 100-0, 1021,938), confidence=0.80, grayscale=True)
         if scratchyFound != None:
@@ -790,38 +793,39 @@ def collectSell():
         # if drawer open    
         else: 
             itemMenuFound = py.locateCenterOnScreen(items, region=(159, 855, 268-159, 1031-855), confidence=0.80, grayscale=True)
-            x = itemMenuFound[0]
-            y = itemMenuFound[1]
-            py.click(x+350, y)
-            time.sleep(1)
-            py.moveTo(548, 846)
-            py.dragTo(548, 168, 0.3, button='left')
-            time.sleep(1)
-            py.moveTo(500, 621)
-            py.dragTo(500, 685, 0.8, button='left')
-            time.sleep(1)
-            py.click(500,635)
-            scratchyFound = py.locateCenterOnScreen(scratchy, region=(0, 938, 100-0, 1021-938), confidence=0.80, grayscale=True)
-            py.click(scratchyFound)
-            time.sleep(0.5)
-            py.click(sell)
-            time.sleep(0.5)
-            py.click(backspace)
-            time.sleep(0.5)
-            py.click(two)
-            time.sleep(0.5)
-            for x in range(19): 
-                plusFound = py.locateCenterOnScreen(plus, region=(1036, 304, 1100-1036, 357-304), confidence=0.92, grayscale=True)
-                py.click(plusFound)
-            py.click(confirm)
-            time.sleep(0.5)
-            py.click(yes)
-            time.sleep(1.5)
-            reachedSellingLimitFound = py.locateCenterOnScreen(reachedSellingLimit, region=(651, 455, 983-651, 534-455), confidence=0.80, grayscale=True)
-            if reachedSellingLimitFound != None: py.click(ok), py.click(1528, 228, clicks=2) 
+            if itemMenuFound != None: 
+                x = itemMenuFound[0]
+                y = itemMenuFound[1]
+                py.click(x+350, y)
+                time.sleep(1)
+                py.moveTo(548, 846)
+                py.dragTo(548, 168, 0.3, button='left')
+                time.sleep(1)
+                py.moveTo(500, 621)
+                py.dragTo(500, 685, 0.8, button='left')
+                time.sleep(1)
+                py.click(500,635)
+                scratchyFound = py.locateCenterOnScreen(scratchy, region=(0, 938, 100-0, 1021-938), confidence=0.80, grayscale=True)
+                py.click(scratchyFound)
+                time.sleep(0.5)
+                py.click(sell)
+                time.sleep(0.5)
+                py.click(backspace)
+                time.sleep(0.5)
+                py.click(two)
+                time.sleep(0.5)
+                for x in range(19): 
+                    plusFound = py.locateCenterOnScreen(plus, region=(1036, 304, 1100-1036, 357-304), confidence=0.92, grayscale=True)
+                    py.click(plusFound)
+                py.click(confirm)
+                time.sleep(0.5)
+                py.click(yes)
+                time.sleep(1.5)
+                reachedSellingLimitFound = py.locateCenterOnScreen(reachedSellingLimit, region=(651, 455, 983-651, 534-455), confidence=0.80, grayscale=True)
+                if reachedSellingLimitFound != None: py.click(ok), py.click(1528, 228, clicks=2) 
 
-            addedToMarketFound = py.locateCenterOnScreen(addedToMarket, region=(722, 479, 1199-722, 543-479), confidence=0.80, grayscale=True)
-            if addedToMarketFound != None: py.click(ok), py.click(1528, 228, clicks=1) 
+                addedToMarketFound = py.locateCenterOnScreen(addedToMarket, region=(722, 479, 1199-722, 543-479), confidence=0.80, grayscale=True)
+                if addedToMarketFound != None: py.click(ok), py.click(1528, 228, clicks=1) 
 
 #######################################
 ########## MAIN BOT SCRIPT ############
