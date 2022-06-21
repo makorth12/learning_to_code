@@ -68,6 +68,9 @@ click_to_escape_from_battle = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avo
 extendCheck = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\extendCheck.png'
 lockedOut = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\lockedOut.png'
 badgateway = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\badgateway.png'
+oops =  r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\oops.png'
+sixteenHour =  r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\16hour.png'
+cancel = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\cancel.png'
 
 collect = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\collect.png'
 items = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\items.png'
@@ -83,8 +86,8 @@ attack_image = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidSh
 gas = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\rss\gas.png'
 minerals = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\rss\mins.png'
 
-cm1 = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\cms\cm1.png'
-cm2 = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\cms\cm2.png'
+cm1 = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\cms\cms1.png'
+cm2 = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\cms\cms2.png'
 
 currency_gas_location = 422, 545
 currency_min_location = 422, 481
@@ -324,7 +327,7 @@ def shipDetection(needle_kp1_desc):
         keypoint_haystack = get_haystack_image()
         keypoint_haystack = keypoint_haystack[40:110, 850:1000]
 
-        kp2, matches, match_points, ship_avoided = match_keypoints(counter, name, kp1, descriptors_needle, keypoint_haystack, min_match_count=50)     
+        kp2, matches, match_points, ship_avoided = match_keypoints(counter, name, kp1, descriptors_needle, keypoint_haystack, min_match_count=40)     
         # display the matches
         match_image = cv.drawMatches(needle_img, kp1, keypoint_haystack, kp2, matches, None)
         cv.imshow('Keypoint Search', match_image)
@@ -414,7 +417,6 @@ def moveScreenshot(new_directory):
     file_type = '\*'
     file_path = glob.glob(folder_path + file_type)
     newest_file = max(file_path, key=os.path.getctime)
-
     sliced_file_name = newest_file.split("\\")[-1]
     sliced_destiation_path_name = new_directory.split("\\")[-1]
 
@@ -460,9 +462,27 @@ def listeners():
         foundLockedOut = py.locateCenterOnScreen(lockedOut, region=(795, 399, 949-795, 466-399), confidence=0.94, grayscale=True)
         foundbadgateway = py.locateCenterOnScreen(badgateway, region=(691, 357, 1220-691, 583-357), confidence=0.94, grayscale=True)
         founddailyBattleLimit = py.locateCenterOnScreen(dailyBattleLimit, region=(619, 920, 962-619, 966-920), confidence=0.94, grayscale=True)
+        foundOops = py.locateCenterOnScreen(oops, region=(880, 369, 1023-880, 426-369), confidence=0.94, grayscale=True)
+        foundsixteenHour = py.locateCenterOnScreen(sixteenHour, region=(902, 569, 1020-902, 616-569), confidence=0.94, grayscale=True)
+        foundCancel = py.locateCenterOnScreen(cancel, region=(709, 650, 873-709, 707-650), confidence=0.94, grayscale=True)
 
-        foundCM1 = py.locateCenterOnScreen(cm1, region=(753, 69, 1034-753, 117-69), confidence=0.85, grayscale=True)
-        foundCM2 = py.locateCenterOnScreen(cm2, region=(753, 69, 1034-753, 117-69), confidence=0.85, grayscale=True)
+        foundCM1 = py.locateCenterOnScreen(cm1, region=(683, 65, 1186-683, 122-69), confidence=0.85, grayscale=True)
+        foundCM2 = py.locateCenterOnScreen(cm2, region=(683, 65, 1186-683, 122-69), confidence=0.85, grayscale=True)
+
+        if foundCancel != None:
+            py.click(foundCancel)
+            print("Clicked cancel")
+
+        if foundsixteenHour != None:
+            py.click(foundsixteenHour)
+            print("Clicked try to re-log in aftertime out.")
+            time.sleep(600)
+
+        if foundOops != None:
+            time.sleep(2)
+            py.click(ok)
+            time.sleep(2)
+            print("Clicked Ok")
 
         if foundCM1 or foundCM2 != None:
             py.click(keep_looking)
@@ -510,8 +530,9 @@ def listeners():
             
         if foundCaptainCleared != None:
             time.sleep(2)
-            py.click(953, 660)
+            py.click(ok)
             print("Clicked Captain Cleared button.")
+            time.sleep(2)
 
         if foundAnotherUser != None:
             time.sleep(2)
@@ -519,10 +540,15 @@ def listeners():
             print("Clicked another user has taken this ship button.")
             time.sleep(3)
 
-        if foundReload or foundReconnect != None:
-            time.sleep(120)
-            py.click(950, 670)
-            print("Clicked reload/reconnect button.")
+        if foundReload != None:
+            time.sleep(60)
+            py.click(foundReload)
+            print("Clicked reload button.")
+
+        if foundReconnect != None:
+            time.sleep(60)
+            py.click(foundReconnect)
+            print("Clicked reconnect")
 
         if foundConnectionError != None:
             time.sleep(2)
@@ -534,9 +560,6 @@ def listeners():
             print('Loading updated ships to avoid list...')
             ships_to_avoid = loadImages(avoid) 
             needle_kp1_desc = preProcessNeedle(ships_to_avoid)    
-            print('Loaded')
-            time.sleep(1)
-            print('Clicking PvP...')
             py.click(foundPVP)
             print('Clicked PvP!')
             ShipDamage()
@@ -567,7 +590,7 @@ def listeners():
 
         if foundVictory != None:
             moveScreenshot(victory_directory)
-            for i in range(5,0,-1):
+            for i in range(2,0,-1):
                 print(f"Exiting in... {i}", end="\r", flush=True)
                 time.sleep(1)
             py.click(965, 541, clicks=10)
@@ -575,7 +598,7 @@ def listeners():
 
         if foundDefeat != None:
             moveScreenshot(defeat_directory)
-            for i in range(5,0,-1):
+            for i in range(2,0,-1):
                 print(f"Exiting in... {i}", end="\r", flush=True)
                 time.sleep(1)
             py.click(965, 541, clicks=10)
@@ -583,7 +606,7 @@ def listeners():
         
         if foundTimeout != None:
             moveScreenshot(timeout_directory)
-            for i in range(5,0,-1):
+            for i in range(2,0,-1):
                 print(f"Exiting in... {i}", end="\r", flush=True)
                 time.sleep(1)
             py.click(965, 541, clicks=10)
@@ -591,7 +614,7 @@ def listeners():
 
         if foundEscape != None:
             moveScreenshot(defeat_directory)
-            for i in range(5,0,-1):
+            for i in range(2,0,-1):
                 print(f"Exiting in... {i}", end="\r", flush=True)
                 time.sleep(1)
             py.click(965, 541, clicks=10)            
@@ -642,11 +665,13 @@ def detection(needle_kp1_desc):
 def buy_things():
     foundGas = py.locateCenterOnScreen(gas, region=(0, 224, 100-0, 437-224), confidence=0.97, grayscale=True)
     if foundGas != None:
+        time.sleep(15)
         buy(currency_gas_location, item='Scratchy', y_offset=0)
         time.sleep(3)
     
     foundMins = py.locateCenterOnScreen(minerals, region=(0, 224, 100-0, 437-224), confidence=0.97, grayscale=True)
     if foundMins != None:
+        time.sleep(15)
         buy(currency_min_location, item='Scratchy', y_offset=0)
         time.sleep(3)
         #buy(currency_min_location, item='Scrap',y_offset=-81)
@@ -720,20 +745,22 @@ def main():
             py.press('up')
             py.keyUp('winleft')
 
+        print("Cycle number: " + str(count))
+
+        if count % 5 == False:
+            print("Buying...")
+            buy_things()
+
+        if count % 20 == False:
+            print("Selling...")
+            collectSell()
+
         if refit_check() == 1:
             ammo_reload()
-            time.sleep(1)
             repair(yes)
-            time.sleep(1)
-            buy_things()
-            time.sleep(1)
-            
-            print("Sell Count: " + str(count))
-            if count % 50 == False:
-                collectSell()
-
             click_galaxy()    
             count = count + 1
+            time.sleep(30)
             
 def extend():
     # if not selling or in a ship battle, stop 
