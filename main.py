@@ -83,6 +83,9 @@ match = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActua
 
 attack_image = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\attack.png'
 
+cleaned = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\cleaned.png'
+another = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\another.png'
+
 gas = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\rss\gas.png'
 minerals = r'C:\Users\coyle\OneDrive\froggy-pirate-master\avoidShips\avoidShipActual\images\rss\mins.png'
 
@@ -126,7 +129,6 @@ def ammo_reload():
     if foundAmmo != None:
         x = foundAmmo[0]
         y = foundAmmo[1]
-        print("Reloading ship...")
         py.click(foundAmmo)
         time.sleep(1)
         py.click(x+-1120,y+-95)
@@ -362,7 +364,6 @@ def shipDetection(needle_kp1_desc):
     return res
 
 def prepare_objectDetection():
-    print("Preparing Object Detection...")
     py.moveTo(921, 415)
     py.dragTo(921, 815, 0.6, button='left')
     print("Finished preparing Object Detection!")
@@ -370,20 +371,18 @@ def prepare_objectDetection():
 def attack():
     foundAttack = py.locateCenterOnScreen(attack_img, region=(1300, 926, 1887-1300, 1027-926), confidence=0.94, grayscale=True) 
     if foundAttack != None:
-        print("Clicking attack button...")
         py.click(foundAttack)
         print("Clicked attack button!")
+        time.sleep(3)
+
 
 def click_galaxy():
-    for i in range(3,0,-1):
+    for i in range(2,0,-1):
         print(f"Clicking Galaxy in... {i}", end="\r", flush=True)
         time.sleep(1)
     galaxy_button = py.locateCenterOnScreen(galaxy, region=(1763,806,1913,1029), confidence=0.85)
     if galaxy_button != None:
         py.click(galaxy_button)
-
-def click_ok():
-    py.click(948, 666)
 
 def keep_looking():
     py.click(1715,1000)
@@ -431,13 +430,17 @@ def moveScreenshot(new_directory):
       
 def ShipDamage():
     for z in range (0, 10):
-        sD = py.locateOnScreen(shipDamaged, region=(819,394,1113,483), confidence=0.92)
+        sD = py.locateOnScreen(shipDamaged, region=(819,394,1113,483), confidence=0.92, grayscale=True)
         if sD != None:
             py.click(yes)
-            break
+
+
 
 def listeners():
+    lcount = 0 
     while True:
+        print("Listener Cycle: " + str(lcount))
+
         foundLeague = py.locateCenterOnScreen(league_image, region=(738, 70, 1198-738, 158-70), confidence=0.94, grayscale=True) 
         foundProfile = py.locateCenterOnScreen(profile_image, region=(738, 70, 1198-738, 158-70), confidence=0.94, grayscale=True) 
         foundFleet = py.locateCenterOnScreen(fleet_image, region=(738, 70, 1198-738, 158-70), confidence=0.94, grayscale=True) 
@@ -445,47 +448,52 @@ def listeners():
         foundBank = py.locateCenterOnScreen(bank_image, region=(1700, 38, 1860-1700, 38-99), confidence=0.94, grayscale=True) 
         foundShop = py.locateCenterOnScreen(shop_image, region=(738, 70, 1198-738, 158-70), confidence=0.94, grayscale=True)  
         foundCaptainLog = py.locateCenterOnScreen(captainLog, region=(738, 70, 1198-738, 158-70), confidence=0.94, grayscale=True)  
+        
         foundAcquireBux = py.locateCenterOnScreen(acquireBux, region=(717, 482, 858-717, 529-482), confidence=0.94, grayscale=True)  
-        foundCaptainCleared = py.locateCenterOnScreen(captain_cleared_image, region=(661, 483, 1040-661, 591-483), confidence=0.94, grayscale=True)
-        foundAnotherUser = py.locateCenterOnScreen(another_user_image, region=(678, 444, 1221-678, 606-444), confidence=0.94, grayscale=True)
-        foundReload = py.locateCenterOnScreen(reload, region=(861, 653, 1022-861, 689-653), confidence=0.94, grayscale=True)
-        foundReconnect = py.locateCenterOnScreen(reconnect, region=(839, 642, 1060-839, 694-642), confidence=0.94, grayscale=True)
+        
+        foundReload = py.locateCenterOnScreen(reload, region=(861, 653, 1022-861, 689-653), confidence=0.80, grayscale=True)
+        foundReconnect = py.locateCenterOnScreen(reconnect, region=(839, 642, 1060-839, 694-642), confidence=0.80, grayscale=True)
         foundConnectionError = py.locateCenterOnScreen(connectionError, region=(678, 444, 1221-678, 606-444), confidence=0.94, grayscale=True)
+        
+        playAnywayFound = py.locateCenterOnScreen(playAnyway, region=(523, 405, 1280-523, 790-405), confidence=0.94, grayscale=True)
+        foundLockedOut = py.locateCenterOnScreen(lockedOut, region=(795, 399, 949-795, 466-399), confidence=0.94, grayscale=True)
+        foundbadgateway = py.locateCenterOnScreen(badgateway, region=(691, 357, 1220-691, 583-357), confidence=0.94, grayscale=True)
+
         foundPVP = py.locateCenterOnScreen(pvp, region=(540, 874, 1381-540, 1033-874), confidence=0.94, grayscale=True)
         foundLLPVP = py.locateCenterOnScreen(llpvp, region=(540, 874, 1381-540, 1033-874), confidence=0.94, grayscale=True)
+        
         foundVictory = py.locateCenterOnScreen(victory_image, region=(600, 213, 1245-600, 609-213), confidence=0.94, grayscale=True) 
         foundDefeat = py.locateCenterOnScreen(defeat_image, region=(600, 213, 1245-600, 609-213), confidence=0.90, grayscale=True)
         foundTimeout = py.locateCenterOnScreen(timeout_image, region=(600, 213, 1245-600, 609-213), confidence=0.94, grayscale=True)
         foundEscape = py.locateCenterOnScreen(escape_image, region=(600, 213, 1245-600, 609-213), confidence=0.94, grayscale=True)
-        playAnywayFound = py.locateCenterOnScreen(playAnyway, region=(523, 405, 1280-523, 790-405), confidence=0.94, grayscale=True)
+        
         click_to_escape_from_battleFound = py.locateCenterOnScreen(click_to_escape_from_battle, region=(7, 32, 151-7, 86-32), confidence=0.90, grayscale=True)
-        foundLockedOut = py.locateCenterOnScreen(lockedOut, region=(795, 399, 949-795, 466-399), confidence=0.94, grayscale=True)
-        foundbadgateway = py.locateCenterOnScreen(badgateway, region=(691, 357, 1220-691, 583-357), confidence=0.94, grayscale=True)
+        
         founddailyBattleLimit = py.locateCenterOnScreen(dailyBattleLimit, region=(619, 920, 962-619, 966-920), confidence=0.94, grayscale=True)
-        foundOops = py.locateCenterOnScreen(oops, region=(880, 369, 1023-880, 426-369), confidence=0.94, grayscale=True)
         foundsixteenHour = py.locateCenterOnScreen(sixteenHour, region=(902, 569, 1020-902, 616-569), confidence=0.94, grayscale=True)
         foundCancel = py.locateCenterOnScreen(cancel, region=(709, 650, 873-709, 707-650), confidence=0.94, grayscale=True)
 
         foundCM1 = py.locateCenterOnScreen(cm1, region=(683, 65, 1186-683, 122-69), confidence=0.85, grayscale=True)
         foundCM2 = py.locateCenterOnScreen(cm2, region=(683, 65, 1186-683, 122-69), confidence=0.85, grayscale=True)
 
+        aU = py.locateOnScreen(another, region=(683, 480, 842-683, 546-480), confidence=0.90, grayscale=True)
+        
+        if aU != None:
+            py.click(ok)
+
         if foundCancel != None:
             py.click(foundCancel)
             print("Clicked cancel")
 
         if foundsixteenHour != None:
+            time.sleep(2)
             py.click(foundsixteenHour)
             print("Clicked try to re-log in aftertime out.")
             time.sleep(600)
 
-        if foundOops != None:
-            time.sleep(2)
-            py.click(ok)
-            time.sleep(2)
-            print("Clicked Ok")
-
         if foundCM1 or foundCM2 != None:
-            py.click(keep_looking)
+            time.sleep(2)
+            keep_looking()
             print("Skipped a CM")
 
         if foundLeague != None:
@@ -527,26 +535,14 @@ def listeners():
             time.sleep(2)
             py.click(no)
             print("Clicked no to acquire starbux!")
-            
-        if foundCaptainCleared != None:
-            time.sleep(2)
-            py.click(ok)
-            print("Clicked Captain Cleared button.")
-            time.sleep(2)
-
-        if foundAnotherUser != None:
-            time.sleep(2)
-            py.click(953, 660)
-            print("Clicked another user has taken this ship button.")
-            time.sleep(3)
-
+        
         if foundReload != None:
-            time.sleep(60)
+            time.sleep(6)
             py.click(foundReload)
             print("Clicked reload button.")
 
         if foundReconnect != None:
-            time.sleep(60)
+            time.sleep(6)
             py.click(foundReconnect)
             print("Clicked reconnect")
 
@@ -560,10 +556,7 @@ def listeners():
             print('Loading updated ships to avoid list...')
             ships_to_avoid = loadImages(avoid) 
             needle_kp1_desc = preProcessNeedle(ships_to_avoid)    
-            py.click(foundPVP)
-            print('Clicked PvP!')
-            ShipDamage()
-            detection(needle_kp1_desc)
+            detection(needle_kp1_desc, foundPVP)
 
         if foundLLPVP != None:
             time.sleep(1)
@@ -643,13 +636,53 @@ def listeners():
             py.click(ok)
             print("Clicked Bad Gateway ok.")
 
-def detection(needle_kp1_desc):    
-    while True:   
+        lcount = lcount + 1 
+
+
+def detection(needle_kp1_desc, foundPVP):    
+    while True:
+        py.click(foundPVP)
+        print('Clicked PvP!')
+        time.sleep(2)
+        ShipDamage()
+
+        # check for area cleaned message
+        foundCleaned = py.locateCenterOnScreen(cleaned, region=(682, 509, 827-682, 558-509), confidence=0.94, grayscale=True)
+        aU = py.locateOnScreen(another, region=(683, 480, 842-683, 546-480), confidence=0.90, grayscale=True)
+        if foundCleaned or aU != None:
+            py.click(ok)
+            time.sleep(2)
+            foundPVP = py.locateCenterOnScreen(pvp, region=(540, 874, 1381-540, 1033-874), confidence=0.94, grayscale=True)
+            if foundPVP != None:
+                time.sleep(1)
+                print('Loading updated ships to avoid list...')
+                ships_to_avoid = loadImages(avoid) 
+                needle_kp1_desc = preProcessNeedle(ships_to_avoid)    
+                py.click(foundPVP)
+                print('Clicked PvP!')
+                time.sleep(2)
+                ShipDamage()
+
+                # check if ready to run detection
+                foundScan = py.locateCenterOnScreen(scan, region=(1612, 52, 1882-1612, 111-52), confidence=0.94, grayscale=True)
+                if foundScan != None:
+                    prepare_objectDetection()
+                    if shipDetection(needle_kp1_desc):
+                        print("Scan complete, avoid!")
+                        time.sleep(2)
+                        continue
+                    else:
+                        print("Scan complete, attack!")
+                        attackLog()
+                        time.sleep(1)
+                        attack()
+                        time.sleep(2)
+                        return              
+
         # check if ready to run detection
         foundScan = py.locateCenterOnScreen(scan, region=(1612, 52, 1882-1612, 111-52), confidence=0.94, grayscale=True)
         if foundScan != None:
             prepare_objectDetection()
-            print("Scanning ship...")
             if shipDetection(needle_kp1_desc):
                 print("Scan complete, avoid!")
                 time.sleep(2)
@@ -667,6 +700,11 @@ def buy_things():
     if foundGas != None:
         time.sleep(15)
         buy(currency_gas_location, item='Scratchy', y_offset=0)
+        time.sleep(3)
+
+    foundGas = py.locateCenterOnScreen(gas, region=(0, 224, 100-0, 437-224), confidence=0.97, grayscale=True)
+    if foundGas != None:
+        buy(currency_gas_location, item='Silicon', y_offset=0)
         time.sleep(3)
     
     foundMins = py.locateCenterOnScreen(minerals, region=(0, 224, 100-0, 437-224), confidence=0.97, grayscale=True)
@@ -703,8 +741,14 @@ def buy(currency_location, item, y_offset):
 
 def start():
     subprocess.call([r"C:\Program Files (x86)\Steam\Steam.exe","-applaunch"," 378760","-fullscreen"])
+        # maximise window
+    time.sleep(8)
+    py.click(800, 150)
+    py.keyDown('winleft')
+    py.press('up')
+    py.keyUp('winleft')
 
-def stop():
+def killPSS():
     subprocess.call(["taskkill","/F","/IM","Pixel Starships.exe"])
 
 def checkIfProcessRunning(processName):
@@ -722,7 +766,7 @@ def checkIfProcessRunning(processName):
     return True;
 
 def main():
-    count = 1 
+    count = 0
     while True:
         # print("Pause Count: " + str(count))
         # check if attack count = 5 
@@ -735,32 +779,39 @@ def main():
         #         print(f"Sleeping for... {i}", end="\r", flush=True)
         #         time.sleep(1)
 
+        count = count + 1
+        print("Attack Count: " + str(count))
+
         # if not running start 
         if checkIfProcessRunning('Pixel Starships.exe'):
             start()
-            # maximise window
-            time.sleep(8)
-            py.click(800, 150)
-            py.keyDown('winleft')
-            py.press('up')
-            py.keyUp('winleft')
-
-        print("Cycle number: " + str(count))
-
-        if count % 5 == False:
-            print("Buying...")
-            buy_things()
-
-        if count % 20 == False:
-            print("Selling...")
-            collectSell()
 
         if refit_check() == 1:
             ammo_reload()
             repair(yes)
+
+            if count % 10 == False:
+                print("Buying...")
+                buy_things()
+
+            # if count % 20 == False:
+            #     print("Selling...")
+            #     collectSell()
+
+            if count % 10 == False:
+                print("Extending...")
+                extend()   
+                time.sleep(2)
+                start()
+
+            # time.sleep(45)
             click_galaxy()    
-            count = count + 1
             time.sleep(30)
+
+
+
+
+
             
 def extend():
     # if not selling or in a ship battle, stop 
@@ -768,9 +819,8 @@ def extend():
     extendCheckFound = py.locateCenterOnScreen(extendCheck, region=(854, 29, 1035-854, 74-29), confidence=0.94, grayscale=True) 
 
     if chatFound or extendCheckFound is None:
-        stop()
-    else:
-        pass
+        killPSS()
+
 
 def collectSell():
     py.click(chat)
@@ -873,7 +923,7 @@ for i in range(3,0,-1):
     print(f"Starting Bot in... {i}", end="\r", flush=True)
     time.sleep(1)
 
-t1 = threading.Thread(name='closeWindows', target=listeners)                     
+t1 = threading.Thread(name='listeners', target=listeners)                     
 t2 = threading.Thread(name='main', target=main)                            # levelup: lock
 
 t1.start()
