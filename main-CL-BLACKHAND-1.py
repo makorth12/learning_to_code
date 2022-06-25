@@ -365,11 +365,10 @@ def shipDetection(needle_kp1_desc):
     return res
 
 def prepare_objectDetection():
-    print("Preparing Object Detection!")
-    time.sleep(2)
     py.moveTo(921, 415)
-    py.dragTo(921, 1015, 1, button='left')
-    time.sleep(1)
+    time.sleep(2)
+    py.dragTo(921, 815, 0.6, button='left')
+    print("Finished preparing Object Detection!")
 
 def attack():
     foundAttack = py.locateCenterOnScreen(attack_img, region=(1300, 926, 1887-1300, 1027-926), confidence=0.94, grayscale=True) 
@@ -430,9 +429,10 @@ def moveScreenshot(new_directory):
         print("Unable to move file.")
       
 def ShipDamage():
-    sD = py.locateOnScreen(shipDamaged, region=(819,394,1113,483), confidence=0.92, grayscale=True)
-    if sD != None:
-        py.click(yes)
+    for z in range (0, 10):
+        sD = py.locateOnScreen(shipDamaged, region=(819,394,1113,483), confidence=0.92, grayscale=True)
+        if sD != None:
+            py.click(yes)
 
 def listeners():
     lcount = 1 
@@ -774,9 +774,7 @@ def main():
 
         if refit_check() == 1:
             ammo_reload()
-            time.sleep(1)
             repair(yes)
-            time.sleep(1)
 
             if count % 7 == False:
                 print("Buying...")
@@ -785,7 +783,7 @@ def main():
             # if count % 20 == False:
             #     print("Selling...")
             #     collectSell()
-        
+
             click_galaxy()    
             time.sleep(30)
             
